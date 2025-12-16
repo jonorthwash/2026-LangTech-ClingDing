@@ -1,0 +1,24 @@
+Creating meaningful language technology for minoritised languages
+
+For language technology to be meaningful, above all it must serve the community of language users without exploiting them.  Current evaluation metrics fail to capture most of what this means (Bird 2020).  So how can we evaluate whether the tools we develop offer value to a community, and, more importantly, do not harm it?
+
+Through a series of case studies, I argue in this talk for several approaches that language technologists can follow to make their work more meaningful, whether developing tools for their own community, conducting academic research, or working for a large digital technology firm.  Most importantly, meaningful language technology should operate seamlessly and be developed and improved through community engagement, privileging local agency.  Instead, language technology for minoritised languages is often developed through community exploitation as part of proprietary environments; alternatively, language technology developed with community engagement often results in stand-alone or poorly-integrated tools.
+
+Why can't language technology enjoy both seamlessness and community engagement?  Most barriers that exist for creating meaningful language technology are imposed by corporate revenue models (cf. Moshagen & Trosterud 2019).  In the end, these models of developing and deploying tools are incompatible with meaningful language technology for the vast majority of languages spoken today.
+
+approaches
+- free, open standards (APIs)
+- digital sovereignty (datasets, hosting)
+- availability (FOSS licenses)
+- community involvement (individuals, governing bodies, ...)
+	- not all involvement is equal: engagement, not exploitation
+
+This talk offers one perspective on what that looks like.  
+
+revenue models ineffective/incompatible:
+- no revenue stream for few users / small markets
+- closed/proprietary APIs (for adding new langauges), data, and algorithms
+- no ability for everyday users to contribute, make adjustments
+
+
+Jonathan N. Washington is associate professor of linguistics at Swarthmore College whose research interests include a range of questions in phonetics and phonology and close investigation of Turkic languages.  Jonathan also develops and promotes language technology for marginalised languages, emphasising approaches that prioritise community needs, such as decolonising practices and free/open source licenses.
