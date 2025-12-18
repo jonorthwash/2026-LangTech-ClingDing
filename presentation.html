@@ -1,0 +1,1692 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Minoritised languages and language technology: engaged scholarship and teaching</title>
+
+		<meta name="description" content="Minoritised languages and language technology: engaged scholarship and teaching">
+		<meta name="author" content="Jonathan North Washington">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- , maximum-scale=1.0, user-scalable=no" -->
+
+		<link rel="stylesheet" href="./reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="./reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="./reveal.js/dist/theme/league.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="./reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+		<!-- link rel="stylesheet" href="./reveal.js/lib/css/zenburn.css" -->
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? './reveal.js/css/print/pdf.scss' : './reveal.js/css/print/paper.scss';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="jnw-overrides.css">
+	</head>
+
+	<!-- ABSTRACT
+
+	One type of challenge faced by speakers of minoritised and endangered languages in language maintenance and revitalisation efforts is the lack of support for the language on digital platforms.  Specific barriers range from not having the language recognised with an ISO 639 code to no support for personal voice assistants in the language, and everything in between (localisation, input methods, spell checking, machine translation, etc.).  Such tools are important because they add to the ease with which a language can be used in digital contexts, which has the potential to increase both the range of uses and the perceptions of the language, both of which are crucial for maintenance and revitalisation.  In this talk, we overview the current state of affairs regarding language technology, using Turkic languages as a case study.  We further present on work being done both in and out of the classroom right here at Swarthmore to support minoritised languages with language technology.
+
+	-->
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-state="no-toc-progress">
+					<p><em style="font-size: 140%">"We live during a brief period of overlap between the mass extinction of the world’s languages and the advent of the digital age."</em></p>
+					<p class="float-right">- Steven Bird, 2009</p>
+				</section>
+
+				<section data-state="no-toc-progress">
+					<p><span style="font-size: 140%" class="highlight-red">Yukwe ènta kishkwik Lënapehòkink këmaèhëlehëna.  Kenahkituneyo Lënapeyòk yu hàki òk Lënapei Sipu lòmëwe, yukwe, òk apchich.  Tëlsëtàm tìlìch këmaxinkwelëmënën Lënapeyunkahke, yukwe òk alàpa èntalawsihtit Lënapeyòk.</span></p>
+					<p>(We gather today in Lenapehoking.  We recognise the Lenape as past, present, and future stewards of this land and the Delaware River.  Let us honor through our actions the Lenape who were, those who are, and those who will be.)</p>
+				</section>
+
+
+				<section id="title" data-state="no-toc-progress">
+					<h1>Minoritised languages and language technology:<br/>engaged scholarship and teaching</h1>
+
+					<div style="padding-top:1in; padding-bottom: 2in;">
+						<div><b>Jonathan Washington, Alina Vykliuk</b><br />
+						Swarthmore College</div>
+					</div>
+
+					<div style="font-style: italic">
+						Faculty lunch, 2024-04-02
+					</div>
+
+					<div style="width: 98%; background: white; margin-left: auto; margin-right: auto; margin-top: 1em; margin-bottom: 1em;">
+						<img class="noframe" src="img/swarthmorelogowhite.svg" style="padding: 3px; background: none; border: none; height: 5em;"/>
+						<!-- img class="noframe" src="img/Apertium_logo_lightbg.svg" style="padding: 3px; background: none; border: none; height: 5em;"/ -->
+					</div>
+					</h4>
+				</section>
+
+				<!-- section>
+					<h2>Overview</h2>
+					<div class="float-left">
+						<div class="box">
+							<p class="bbb">Our talk in a nutshell</p>
+							<p>Why is <span class="highlight">language technology</span> important,<br/> what is its connection to <span class="highlight">language vitality</span>,<br/> what the state of the art is for <span class="highlight">Turkic languages</span>,<br/> and what needs to be done</span></p>
+						</div>
+					</div>
+					<div class="float-right">
+						<div class="box">
+							<p class="bbb">The next ~18 minutes:</p>
+							<ul>
+								<li>Language vitality</li>
+								<ul class="shrink">
+									<li>Turkic languages</li>
+									<li>Countering loss</li>
+								</ul>
+								<li>Language technology (LT)</li>
+								<ul class="shrink">
+									<li>What is LT?</li>
+									<li>Why LT is important?</li>
+								</ul>
+								<li>The relationship between LT and vitality</li>
+								<ul class="shrink">
+									<li>Existing Turkic LT</li>
+									<li>How can we help?</li>
+									<li>Community-based efforts</li>
+									<li>Case study</li>
+								</ul>
+								<li>Integrating comunity efforts</li>
+								<li>Concluding thoughts</li>
+							</ul>
+						</div>
+					</div>
+				</section -->
+
+				<section data-auto-animate>
+					<h2>What I'm not presenting on</h2>
+					<p class="highlight">Language contact and historical linguistics of Central Asia</p>
+					<div class="centered-container">
+						<br/>
+						<div class="papers" style="width: 46%; height: calc(6in - 16px);">
+							<img class="noMax" src="img/Washington (2023).png"/>
+						Washington (2023) 
+						</div>
+
+						<div class="papers" style="width: 46%; height: calc(6in - 16px);">
+							<img class="noMax" src="img/Sharifzadeh et al. (2024).png"/>
+						Sharifzadeh, Dolatian, and Washington (2024)
+						</div>
+					</div>
+					<!-- img src="img/Sharifzadeh et al. (2024).png"/ -->
+					<!-- img src="img/Washington (2023).png"/ -->
+				</section>
+
+				<section data-auto-animate>
+					<h2>What I'm not presenting on</h2>
+					<p class="highlight">Supporting community-facing language revitalisation toolkit for an Indigenous language of North America</p>
+
+					<div class="centered-container">
+						<img src="img/revitalisation toolkit.png"/>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<h2>What I'm not presenting on</h2>
+					<p class="highlight">Vowel harmony</p>
+						<div class="papers" style="width: 46%; height: calc(6in - 16px);">
+							<img class="noMax" src="img/Washington (2024).png"/>
+							Washington (2024)
+						</div>
+				</section>
+
+				<section data-auto-animate>
+					<h2>What I'm not presenting on</h2>
+					<p class="highlight">Ultrasound tongue imaging</p>
+					<img src="img/IMG_6869_cropped_flipped.JPG" style="height: 8em;"/>
+					<img src="img/US_imaged.svg" style="height: 8em;"/>
+					<img src="img/us_frame.png" style="height: 8em;"/><br/>
+					<img src="img/RusPal_alllevels_cropped.png" style="width: 50%"/>
+					<div class="fragment float-right" style="width: 35% !important">
+						<p class="shrink">Outkin &amp; Washington (2024)</p>
+						<div class="papers" style="">
+							<img style="" src="img/Outkin Washington (2024) paper.png"/>
+						</div>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h2>What I'm not presenting on</h2>
+					<p>Ultrasound tongue imaging</p>
+					<img src="img/IMG_6869_cropped_flipped.JPG" style="height: 8em;"/>
+					<img src="img/US_imaged.svg" style="height: 8em;"/>
+					<img src="img/us_frame.png" style="height: 8em;"/><br/>
+					<img src="img/RusPal_alllevels_cropped.png" style="width: 50%"/>
+					<div class="float-right" style="width: 35% !important">
+						<p class="shrink">Raj &amp; Washington (2024)</p>
+						<div class="papers" style="">
+							<img style="" src="img/Raj Washington (2024) paper.png"/>
+						</div>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Language vitality</h2>
+					<div class="highlight-box">
+						<h4>What do we mean by "loss of vitality" (wrt languages)</h4>
+						<p class="fragment">The "breakdown" of intergenerational transmission of a language</p>
+					</div>
+
+					<div class="float-left">
+						<div class="highlight-box fragment">
+							<h4>Why do languages lose vitality?</h4>
+							<p>DISINCENTIVES<p>
+							<ul>
+								<li>oppressive actions/policies <span class="shrink">(forced displacement, genocide, educational policy, etc.)</span></li>
+								<li>is <span class="highlight">always</span> due to <span class="highlight">oppression</span> and <span class="highlight">marginalisation</span></li>
+								<li>At the core: if there are <span class="highlight">disincentives</span> to using a language, people will stop using it</li>
+							</ul>
+						</div>
+					</div>
+					<div class="float-right">
+						<div class="highlight-box fragment">
+							<h4>Why should we care?</h4>
+							<li>For individuals:</li>
+							<ul class="shrink">
+								<li>Weakened connection to cultural knowledge</li>
+								<li>Loss of cognitive, academic, emotional benefits of multilingualism &amp; Indigenous language use </li>
+								<li>Impact on families</li>
+								<li>Impact on identity <br/>
+								<div class="citation" style="float: right">(Baumgart &amp; Billick 2017, Whalen et al. 2022, etc.)</div></li>
+							</ul>
+							<li>For community, wider world:</li>
+							<ul class="shrink">
+								<li>Loss of environmental, medical, historical knowledge</li>
+								<li>Loss of a whole way of understanding the world</li>
+								<li>Loss of a linguistic (cognitive &amp; social) system</li>
+								<li>Loss of diversity (cf. cultural, racial, etc.)</li>
+							</ul>
+
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h2>Language vitality</h2>
+
+					<div class="float-left">
+						<div class="highlight-box fragment">
+							<h4>languages <span class="highlight">currently spoken</span></span></h4>
+							<div class="fragment"><p>7159 <span class="citation">(Ethnologue 2025)</span></p>
+							<p>7134 <span class="citation">(UNESCO 2025)</span></p></div>
+						</div>
+					</div>
+					<div class="float-right">
+						<div class="highlight-box fragment">
+							<h4>percentage considered <span class="highlight">"endangered"</span></h4>
+							<div class="fragment"><p>44.6% <span class="citation">(Ethnologue 2025)</span></p>
+							<p>82.8% <span class="citation">(UNESCO 2025)</span></p><!-- 5906/7134 are not "safe" or "potentially vulnerable"; excludes "not in use" -->
+							</div>
+						</div>
+					</div>
+
+					<div class="float-right">
+						<div class="highlight-box fragment">
+							<h4>percentage considered <span class="highlight">"endangered"</span> in 2010</h4>
+							<p class="fragment">37% <span class="citation">(UNESCO 2010)</span></p>
+						</div>
+					</div>
+
+					<div class="float-left">
+						<div class="highlight-box fragment">
+							<h4>percentage considered <span class="highlight">"digitally vital"</span></h4>
+							<p class="fragment">5% <span class="citation">(Kornai 2013)</span></p>
+							<p class="fragment">(95% of languages will "die off" without better digital support)</p>
+						</div>
+					</div>
+
+					<!-- div class="highlight-box">
+						<h4>The language vitality crisis</h4>
+						<p>Languages everywhere are losing vitality</p>
+						<ul>
+							<li>Number of languages <span class="highlight">currently spoken</span>: <span class="raln"><span class="highlight-green">7159</span> <span class="citation">(Ethnologue 2025)</span></span></li>
+							<li>Percentage of those considered "<span class="highlight">endangered</span>":  <span class="raln"><span class="highlight-green">44.6%</span> <span class="citation">(Ethnologue 2025)</span></li>
+							<li>Percentage of those considered "<span class="highlight">digitally vital</span>": <span class="raln"><span class="highlight-green">5%</span> <span class="citation">(Kornai 2013)</span></span></li>
+							<ul>
+								<li>implication: <span class="highlight">95% of languages will "die off"</span></li>
+								<li>solution: need language technology</li>
+							</ul>
+						</ul>
+					</div -->
+					<!-- div class="fragment">
+						<p>Implications</p>
+						<ul>
+							<li>Languages everywhere are losing vitality</li>
+							<li>95% of languages will "die off" without better digital support</li>
+						</ul>
+						<p>Solutions</p>
+						<ul>
+							<li>Language technology</li>
+						</ul>
+					</div -->
+				</section>
+<!--
+unused
+{
+  "options": {"plugins":{
+	"legend": {"position": "right",
+		"labels": {"font": {"size": "200%"}, "fontColor": '#000'}
+	}
+  }},
+ "data": {
+  "labels": ["Turkish", "Uzbek", "Azərbaycani", "Uyghur", "Kazakh", "Turkmen", "Tatar", "Kyrgyz", "Iraqi Türkman", "Bashqort", "Chuvash", "Qashqayi", "Khorasani", "Remainder"],
+  "datasets":[
+   {
+	 "data":[35.88,19.02,12.97,10.81,8.21,3.03,2.38,2.16,1.95,0.65,0.52,0.43,0.43,1.57],
+    "label":"Share of Turkic speakers by percent","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(220,20,20,.8)",
+	 	"rgba(20,220,20,.8)",
+		"rgba(20,20,220,.8)",
+		"rgba(43,153,252,.8)",
+		"rgba(0,220,220,.8)",
+		"rgba(0,132,61,.8)",
+		"rgba(255,0,0,.8)",
+		"rgba(255,255,20,.8)",
+		"rgba(0,220,255,.8)",
+		"rgba(0,112,255,.8)",
+		"rgba(255,223,0,.8)",
+		"rgba(227,172,59,.8)",
+		"rgba(162,38,11,.8)",
+		"rgba(255,255,255,.8)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+
+				<section>
+					<h2>What is language technology?</h2>
+					<!-- div class="highlight-box">
+						<p>anything linguistic that involves interacting with [digital] technology</p>
+						<hr/-->
+						<div style="width: 120%; margin-left: -10%;" class="fragment">
+						<div class="highlight-box" style="display: inline-block; width: 30%">
+							<img src="©img/predictive_text.webp" title="Input methods, predictive text"/>
+						</div>
+						<div class="highlight-box" style="display: inline-block; width: 25.5%">
+							<img src="img/MT.png" title="Machine translation"/>
+						</div>
+						<div style="display: inline-block; width: 20%">
+							<div class="highlight-box" style="display: inline-block">
+								<img src="©img/screenreader_inverted_cropped.png" title="Screen readers (TTS)"/>
+							</div>
+							<div class="highlight-box" style="display: inline-block">
+								<img src="img/spellchecking.png" title="Spell checking, grammar checking"/>
+							</div>
+						</div><br/>
+
+						<div class="highlight-box" style="display: inline-block; width: 14%">
+							<img src="©img/Siri.png" title="Voice assistants"/>
+						</div>
+
+						<div class="highlight-box" style="display: inline-block; width: 28%">
+							<img src="img/CALL.png" title="Computer-aided language learning"/>
+						</div>
+						<div class="highlight-box" style="display: inline-block; width: 17%">
+							<img src="img/search images.png" title="Search engines"/>
+						</div>
+						<div class="highlight-box" style="display: inline-block; width: 15%">
+							<img src="img/localisation.png" title="Localisation"/>
+						</div>
+
+						</div>
+						<!-- ul>
+							<li>input methods (keyboards, mobile keyboards, speech recognition)</li>
+							<li>localisation (e.g., text displayed in a program)</li>
+							<li>screen readers (text-to-speech)</li>
+							<li>voice assistants</li>
+							<li>machine translation</li>
+							<li>search engines</li>
+						</ul -->
+					<!-- /div-->
+				</section>
+
+
+				<section>
+					<h2>Language technology<br/>&amp; language vitality</h2>
+
+					<div class="highlight-box">
+						<h4>Why is language technology important to language vitality?</h4>
+						<ul>
+							<li>Language mediates most interaction with digital technology</li>
+							<li>Digital technology is hugely pervasive</li>
+						</ul>
+					</div>
+
+					<div class="highlight-box">
+						<h4>What does language technology do for a language?</h4>
+						<ul>
+							<li>adds to ease with which a language can be used in digital contexts</li>
+							<li>increases range of uses of language</li>
+							<li>raises perceptions of language</li>
+							<li>supports maintenance and revitalisation efforts</li>
+						</ul>
+					</div>
+
+					<div class="highlight-box">
+						<h4>What happens without language technology?</h4>
+						<p style="margin-bottom: 0">"Digital language death" (i.e., loss of intergenerational transmission)</p>
+						<div class="citation raln">(Kornai 2013)</div>
+						<aside class="notes">
+						<ul class="shrink">
+							<li>"only" ⅓ of 7000 languages are officially considered endangered</li>
+							<li>but only 5% have sufficient level of access to language technology to sustain cultural transmission in digital age</li>
+							<li>implication: ; need language technology</li>
+						</ul>
+
+						</aside>
+					</div>
+					<div class="highlight-box fragment">
+						<p class="highlight">Language technology supports language vitality</p>
+					</div>
+
+					<!-- div class="highlight-box fragment">
+						<h4>How to counter loss of vitality?</h4>
+						<ul>
+							<li>Fight oppressive policies and actions</li>
+							<li>Support language maintenance and revitalisation efforts</li>
+							<li>Easy, right?  <span class="fragment highlight">Actually, language technology can (maybe) help!</span></li>
+						</ul>
+					</div -->
+				</section>
+
+				<section>
+					<section data-background-image="©img/The-distribution-of-the-Turkic-languages-Abbreviations-for-languages-are-explained-in.png" data-background-size="110%" data-background-opacity="0.25">
+					<h2>Turkic: Language vitality</h2>
+					<div class="highlight-box">
+						<h4>Turkic languages by number of speakers</h4>
+						<p>&gt;200 million speakers total</p>
+						<hr/>
+						<div style="height:580px">
+							<canvas data-chart="doughnut" >
+<!--
+{
+ "data": {
+  "labels": ["Turkish", "Uzbek", "Azərbaycani", "Uyghur", "Kazakh", "Turkmen", "Tatar", "Kyrgyz", "Iraqi Türkman","remainder (31 languages)"],
+  "datasets":[
+   {
+	 "data":[41.76,15.66,11.39,8.07,5.69,5.22,3.46,2.61,2.14,4.00],
+    "label":"Share of Turkic speakers by percent","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(220,20,20,.8)",
+	 	"rgba(20,220,20,.8)",
+		"rgba(20,20,220,.8)",
+		"rgba(43,153,252,.8)",
+		"rgba(0,220,220,.8)",
+		"rgba(0,132,61,.8)",
+		"rgba(255,0,0,.8)",
+		"rgba(255,255,20,.8)",
+		"rgba(0,220,255,.8)",
+		"rgba(255,255,255,.8)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+							</canvas>
+						</div>
+						<!-- hr/>
+						<p>("remainder": ~31 languages)</p -->
+					</div>
+					</section>
+
+					<section data-background-image="©img/The-distribution-of-the-Turkic-languages-Abbreviations-for-languages-are-explained-in.png" data-background-size="110%" data-background-opacity="0.5">
+						&nbsp;
+					</section>
+				</section>
+
+				<section>
+				<section>
+					<h2>Language vitality: Turkic</h2>
+					<div class="highlight-box">
+						<h4>Turkic languages by vitality</h4>
+						<p>~40 languages, only 11 "normal" <span class="citation">(Ethnologue 2023, other sources)</span></p>
+						<hr/>
+						<div style="height:580px">
+							<canvas data-chart="doughnut" >
+<!--
+{
+ "data": {
+  "labels": ["\"Normal\"", "Vulnerable", "Definitely Endangered", "Severely Endangered", "Critically Endangered"],
+  "datasets":[
+   {
+	 "data":[11, 9, 5, 6, 9],
+    "label":"Turkic languages by endangerement","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(68,100,65,1)",
+	 	"rgba(112,163,78,1)",
+	 	"rgba(212,176,74,1)",
+		"rgba(196,46,28,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+							</canvas>
+						</div>
+						<hr/>
+						<p>(estimates probably overly optimistic)</p>
+					</div>
+				</section>
+				<!-- different green-to-red scale
+					 "backgroundColor": ["rgba(20,220,20,.8)",
+				 	"rgba(112,220,20,.8)",
+				 	"rgba(220,220,20,.8)",
+					"rgba(252,186,20,.8)",
+					"rgba(220,20,20,.8)"
+				  ]
+				-->
+				<section>
+					<h2>The full list</h2>
+					<table class="supershrink float-left booktabs">
+						<tr><th>language</th><th>№</th><th>vitality</th></tr>
+						<tr>
+							<td>Turkish</td>
+							<td class="raln">88M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Uzbek</td>
+							<td class="raln">33M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Azərbaycani</td>
+							<td class="raln">24M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Kazakh</td>
+							<td class="raln">17M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Uyghur</td>
+							<td class="raln">12M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Turkmen</td>
+							<td class="raln">11M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Kyrgyz</td>
+							<td class="raln">7.3M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Tatar</td>
+							<td class="raln">5.5M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Iraqi Türkman</td>
+							<td class="raln">4.5M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal*</td>
+						</tr>
+						<tr>
+							<td>Bashqort</td>
+							<td class="raln">2M</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Chuvash</td>
+							<td class="raln">1.1M</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Qashqayi</td>
+							<td class="raln">1M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Khorasani</td>
+							<td class="raln">650K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Qaraqalpaq</td>
+							<td class="raln">650K</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Crimean Tatar</td>
+							<td class="raln">600K</td>
+							<td class="caln" style="background-color: rgba(196,46,28,1)">severely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Sakha</td>
+							<td class="raln">500K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Qumuq</td>
+							<td class="raln">450K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Qarachay&#8209;Balqar</td>
+							<td class="raln">350K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Tuvan</td>
+							<td class="raln">300K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Urum</td>
+							<td class="raln">200K</td>
+							<td class="caln" style="background-color: rgba(212,176,74,1)">definitely&nbsp;endangered</td>
+						</tr>
+					</table>
+					<table class="supershrink float-right booktabs">
+						<tr><th>language</th><th>№</th><th>vitality</th></tr>
+						<tr>
+							<td>Gagauz</td>
+							<td class="raln">150K</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Siberian&nbsp;Tatar</td>
+							<td class="raln">100K</td>
+							<td class="caln" style="background-color: rgba(212,176,74,1)">definitely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Noghay</td>
+							<td class="raln">100K</td>
+							<td class="caln" style="background-color: rgba(212,176,74,1)">definitely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Dobrujan&nbsp;Tatar</td>
+							<td class="raln">70K</td>
+							<td class="caln" style="background-color: rgba(196,46,28,1)">severely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Salar</td>
+							<td class="raln">70K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Southern&nbsp;Altay</td>
+							<td class="raln" rowspan="2" style="vertical-align: middle">60K</td>
+							<td class="caln" style="background-color: rgba(196,46,28,1)">severely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Northern&nbsp;Altay</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Khakas</td>
+							<td class="raln">50K</td>
+							<td class="caln" style="background-color: rgba(212,176,74,1)">definitely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Khalaj</td>
+							<td class="raln">20K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Äynu</td>
+							<td class="raln">6K</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Western&nbsp;Yugur</td>
+							<td class="raln">5K</td>
+							<td class="caln" style="background-color: rgba(196,46,28,1)">severely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Shor</td>
+							<td class="raln">3K</td>
+							<td class="caln" style="background-color: rgba(196,46,28,1)">severely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Dolgan</td>
+							<td class="raln">1K</td>
+							<td class="caln" style="background-color: rgba(212,176,74,1)">definitely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Dukhan</td>
+							<td class="raln">&lt;500</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Krymchak</td>
+							<td class="raln">200</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Ili&nbsp;Turki</td>
+							<td class="raln">100</td>
+							<td class="caln" style="background-color: rgba(196,46,28,1)">severely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Tofa</td>
+							<td class="raln">100</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Karaim</td>
+							<td class="raln">&lt;80</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Chulym</td>
+							<td class="raln">&lt;50</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Fu&#8209;yü&nbsp;Gyrgys</td>
+							<td class="raln">&lt;10</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<th class="laln">total</th><th>211M</th><th></th>
+						</tr>
+					</table>
+					<div style="clear: both">&nbsp;</div>
+					<p class="citation">(Ethnologue 2023 and other sources)</p>
+				</section>
+				</section>
+
+				<!-- section>
+					<h2>Language vitality: countering loss</h2>
+					<div class="highlight-box">
+						<h4>Why is loss of language vitality bad?</h4>
+						<ul>
+							<li>For individual community members:</li>
+							<ul class="shrink">
+								<li>Weakened connection to cultural knowledge</li>
+								<li>Loss of cognitive, academic, emotional benefits of multilingualism</li>
+								<li>Impact on families</li>
+								<li>Impact on identity</li>
+							</ul>
+							<li>For the community and wider world:</li>
+							<ul class="shrink">
+								<li>Loss of environmental, medical, and historical knowledge</li>
+								<li>Loss of a whole way of understanding the world</li>
+								<li>Loss of a linguistic (cognitive and social) system...</li>
+								<li>Loss of diversity</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="highlight-box">
+						<h4>How to counter loss of vitality?</h4>
+						<ul>
+							<li>Fight oppressive policies and actions</li>
+							<li>Support language maintenance and revitalisation efforts</li>
+							<li class="fragment">Easy, right?</li>
+						</ul>
+					</div>
+				</section -->
+
+
+				<section>
+					<h2>Existing Turkic Language technology</h2>
+						<!--  Turkish, Uzbek, Azerbaycani, Uyghur, Kazakh, Turkmen, Tatar, Kyrgyz, Bashqort, Iraqi Turkmen, Chuvash, Qashqai, Khorasani, Qaraqalpaq, Crimean Tatar, Qumuq, Qarachay-Balqar, Sakha, Tuvan, Urum, Gagauz, Siberian Tatar, Nogay, Salar, Southern Altay, Khakas, Khalaj, Yughur, Shor, Dolgan, Ili, Tofa, Northern Altay, Krymchak, Karaim, Chulym, Fu-yü Gyrgys, Dukhan -->
+						<!-- Localisation, Keyboard, Translate, Voice assistant -->
+					<div class="highlight-box float-left">
+						<h4>Mobile keyboards</h4>
+						<!--
+							Apple Quickype: 8/40
+							Google Gboard: 2 (×3), 5 (×2), 12 (×1)
+							Microsoft Swiftkey: 2 (×2), 13 (×1)
+						-->
+
+						<div style="height:280px">
+							<canvas data-chart="pie" >
+<!--
+{
+ "data": {
+  "labels": ["3", "2", "1", "0"],
+  "datasets":[
+   {
+	 "data":[2, 5, 12, 21],
+    "label":"Mobile keyboard coverage of Turkic: Google Gboard","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(68,100,65,1)",
+	 	"rgba(112,163,78,1)",
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   },
+   {
+	 "data":[2, 13, 25],
+    "label":"Mobile keyboard coverage of Turkic: Microsoft Swiftkey","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": [
+	 	"rgba(112,163,78,1)",
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   },
+   {
+	 "data":[8, 32],
+    "label":"Mobile keyboard coverage of Turkic: Apple Quicktype","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": [
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+							</canvas>
+						</div>
+						(Google, Microsoft, Apple)
+
+
+						</div>
+						<!-- div class="highlight-box">
+							<h4>Mobile keyboards</h4>
+								<table class="supershrink booktabs" style="max-width: 80% !important; margin-bottom: 0.5em;">
+									<tr><th>keyboard</th><th colspan="2">languages supported</th><th>missing</th></tr>
+									<tr><td>Apple&nbsp;QuickType</td><td class="raln">8:</td><td>Azərbaycani, Chuvash, Kazakh, Kyrgyz, Turkish, Turkmen, Uyghur, Uzbek</td><td>~32: ...</td></tr>
+									<tr><td>Google&nbsp;Gboard</td><td class="raln">19:</td><td>Azərbaycani (×3), Bashqort, Chuvash, Crimean Tatar (×2), Gagauz (×3), Kazakh, Khorasani (×2), Kyrgyz, Qarachay-Balqar, Qaraqalpaq (×2), Qashqayi, Sakha, Tatar, Turkish (×2), Turkmen, Tuvan, Urum, Uyghur, Uzbek (×2)</td><td>~21: ...</td></tr>
+									<tr><td>Microsoft&nbsp;Swiftkey</td><td class="raln">15:</td><td>Azərbaycani (×2), Bashqort, Chuvash, Gagauz, Kazakh (×2), Khorasani, Kyrgyz, Qaraqalpaq, Sakha, Tatar, Turkish, Turkmen, Tuvan, Uyghur, Uzbek</td><td>~25: ...</td>
+								</table -->
+								<!-- Swiftkey: Azərbaycani (Cyrillic, Perso-Arabic), Bashqort, Chuvash, Gagauz, Kazakh (Cyrillic, Latin), Khorasani, Kyrgyz, Qaraqalpaq, Sakha, Tatar, Turkish, Turkmen, Tuvan, Uyghur, Uzbek
+								Google virtual: Kazakh, Kyrgyz, Turkish (×2), Uzbek (×3)
+								Gboard: Azərbaycani (×3), Bashqort, Chuvash, Crimean Tatar (×2),  Gagauz (×3), Qarachay-Balqar, Qaraqalpaq (×2), Kazakh, Khorasani (×2), Kyrgyz, Qashqayi, Sakha, Tatar, Turkish (×2), Turkmen, Tuvan, Urum, Uyghur, Uzbek (×2)
+								iOS QuickType: Azərbaycani, Chuvash, Kazakh, Kyrgyz, Turkish, Turkmen, Uyghur, Uzbek (×3) -->
+						<!-- Android localisation: -->
+						<!-- /div -->	
+
+						<!-- Google translate: Azerbayjani, Kazakh, Kyrgyz, Tatar, Turkish, Turkmen, Uyghur, Uzbek
+						Yandex translate: Azerbayjani, Bashqort, Chuvash, Kazakh (+Latin), Kyrgyz, Tatar, Turkish, Uzbek (+Cyrillic), Sakha -->
+
+						<div class="highlight-box float-right">
+							<h4>Machine translation</h4>
+							<div style="height:280px">
+							<canvas data-chart="pie" >
+<!--
+{
+ "data": {
+  "labels": ["2", "1", "0"],
+  "datasets":[
+   {
+	 "data":[2, 7, 31],
+    "label":"MT coverage of Turkic: Yandex","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": [
+	 	"rgba(112,163,78,1)",
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   },
+   {
+	 "data":[8, 32],
+    "label":"MT coverage of Turkic: Google","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": [
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+							</canvas>
+							</div>
+							(Yandex, Google)
+						</div>
+						<!-- div class="highlight-box">
+							<h4>Machine translation</h4>
+							<table class="supershrink booktabs" style="max-width: 80% !important; margin-bottom: 0.5em;">
+								<tr>
+									<th>platform</th>
+									<th>Azərbaycani</th>
+									<th>Bashqort</th>
+									<th>Chuvash</th>
+									<th>Kazakh</th>
+									<th>Kyrgyz</th>
+									<th>Sakha</th>
+									<th>Tatar</th>
+									<th>Turkish</th>
+									<th>Turkmen</th>
+									<th>Uyghur</th>
+									<th>Uzbek</th>
+									<th>~29 others</th>
+								</tr>
+								<tr>
+									<td>Google</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-red">✘</td>
+									<td class="caln highlight-red">✘</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-red">✘</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-red">✘</td>
+								</tr>
+								<tr>
+									<td>Yandex</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-green">✔✔</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-green">✔</td>
+									<td class="caln highlight-red">✘</td>
+									<td class="caln highlight-red">✘</td>
+									<td class="caln highlight-green">✔✔</td>
+									<td class="caln highlight-red">✘</td>
+								</tr>
+							</table>
+						</div -->
+
+						<div class="highlight-box float-left">
+							<h4>Text-to-speech support</h4>
+							<div style="height:280px">
+								<canvas data-chart="pie" >
+<!--
+{
+ "data": {
+  "labels": ["6", "2", "1", "0"],
+  "datasets":[
+   {
+	 "data":[1, 5, 2, 32],
+    "label":"TTS coverage of Turkic: Android","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(68,100,65,1)",
+	 	"rgba(112,163,78,1)",
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   },
+   {
+	 "data":[1, 39],
+    "label":"TTS coverage of Turkic: Siri","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": [
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+								</canvas>
+							</div>
+							(Android, Siri)
+						</div>
+
+							<!-- div class="float-left">
+								<span class="shrink">Siri</span>
+								<table class="supershrink booktabs" style="max-width: 80% !important; margin-bottom: 0.5em;">
+									<tr><th>supported</th><th>languages</th></tr>
+									<tr style="background-color:rgba(112,163,78,1)"><td>✔</td><td>Turkish</td></tr>
+									<tr style="background-color:rgba(117,26,24,1)"><td>✘</td><td>~39 other languages</td></tr>
+								</table>
+							</div>
+							<div>
+								<span class="shrink">Android (number of engines)</span>
+								<table class="supershrink booktabs" style="max-width: 80% !important; margin-bottom: 0.5em;">
+									<tr><th>№</th><th>languages</th></tr>
+									<tr style="background-color:rgba(112,163,78,1)"><td>6</td><td>Turkish</td></tr>
+									<tr style="background-color:rgba(212,176,74,1)"><td>2</td><td>Azərbaycani, Kyrgyz, Tatar, Uzbek</td></tr>
+									<tr style="background-color:rgba(196,46,28,1)"><td>1</td><td>Kazakh, Turkmen, Uyghur</td></tr>
+									<tr style="background-color:rgba(117,26,24,1)"><td>0</td><td>~31 other languages</td></tr>
+								</table>
+							</div>
+						</div -->
+						<!-- 2023: Android TTS support (# engines): Turkish (6), Uzbek (2), Azerbaijani (2), Kazakh (1), Kyrgyz (2), Turkmen (1), Uyghur (1), Tatar (2) --><!-- https://accessibleandroid.com/list-of-languages-with-available-tts-engines-on-android/ -->
+						<!-- 2025: Android TTS support (# engines): Turkish (6), Uzbek (2), Azerbaijani (2), Kazakh (1), Kyrgyz (2), Turkmen (2), Uyghur (1), Tatar (2) --><!-- https://accessibleandroid.com/list-of-languages-with-available-tts-engines-on-android/  6: 1, 2: 5, 1: 2, 0: 32 -->
+						<!-- Siri: Turkish -->
+
+
+						<div class="highlight-box float-right">
+							<h4>Baseline localisation data</h4>
+							<div style="height:280px">
+								<canvas data-chart="pie" >
+<!--
+{
+ "data": {
+  "labels": ["modern", "moderate", "basic", "unrated", "missing"],
+  "datasets":[
+   {
+	 "data":[6, 1, 4, 8, 27],
+    "label":"CLDR coverage of Turkic","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(68,100,65,1)",
+	 	"rgba(112,163,78,1)",
+	 	"rgba(212,176,74,1)",
+		"rgba(196,46,28,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+
+								</canvas>
+<!--
+	CLDR 2023
+		modern: 6/44
+		moderate: 1/44
+		basic: 2/44
+		unrated / being added: 6/44
+		missing: 29/44
+
+	CLDR 2025
+		modern: 6/46
+		moderate: 1/46
+		basic: 4/46
+		unrated: 8/46
+		missing: 27/46
+
+-->
+							</div>
+							(CLDR)
+						</div>
+						<div style="clear: both">&nbsp;</div>
+						
+					</section>
+					<section>
+					<h2>Existing Turkic Language technology</h2>
+
+						<div class="highlight-box">
+							<h4>ISO 639 language codes</h4>
+								<p>(baseline for any hope of language technology)</p>
+								<hr/>
+							<div style="height:580px">
+								<canvas data-chart="doughnut" >
+<!--
+{
+ "data": {
+  "labels": ["✔", "✘"],
+  "datasets":[
+   {
+	 "data":[0.925, 0.075],
+    "label":"ISO 639 codes","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": [
+	 	"#90ee90",
+		"#e05b58"
+	  ]
+   }
+  ]
+ }
+}
+-->
+								</canvas>
+						</div>
+								<hr/>
+								<p><span class="highlight-red">Currently missing:</span> Iraqi Türkman, Fu-yü Gyrgys, Dukhan</p>
+						</div>
+						<!-- CLDR (for localisation): az, az_Cyrl, cv, kk, ky, tt, tr, tk, ug, uz, uz_Arab, uz_Cyrl, sah
+							az:modern
+							cv:moderate
+							kk:modern
+							ky:modern
+							tt:basic
+							tk:modern
+							tr:modern
+							uz:modern
+							uz_Cyrl:basic
+							uz_Arab:_
+							az_Arab:_
+							az_Cyrl:_
+							sah:_
+							ug:_
+							-->
+
+						<!-- div class="highlight-box">
+							<h4>CLDR</h4>
+							<p>(baseline localisation data used widely)</p>
+							<table class="supershrink booktabs" style="max-width: 80% !important; margin-bottom: 0.5em;">
+								<tr><th>coverage</th><th>languages</th></tr -->
+								<!-- tr style="background-color:rgba(68,100,65,1)"><td>modern</td><td>5: Azərbaycani, Kazakh, Kyrgyz, Turkish, Turkmen, Uzbek</td></tr>
+								<tr style="background-color:rgba(112,163,78,1)"><td>moderate</td><td>1: Chuvash</td></tr>
+								<tr style="background-color:rgba(212,176,74,1)"><td>basic</td><td>2: Tatar, Uzbek (Cyrillic)</td></tr>
+								<tr style="background-color:rgba(196,46,28,1)"><td>unrated</td><td>5: Azərbaycani (Arabic), Azərbaycani (Cyrillic), Sakha, Uyghur, Uzbek (Arabic)</td></tr>
+								<tr style="background-color:rgba(196,46,28,1)"><td>being added</td><td>1: Tuvan</td></tr -->
+								<!-- 2025 tr style="background-color:rgba(68,100,65,1)"><td>modern</td><td>5: Azərbaycani, Kazakh, Kyrgyz, Turkish, Turkmen, Uzbek</td></tr>
+								<tr style="background-color:rgba(112,163,78,1)"><td>moderate</td><td>1: Tatar</td></tr>
+								<tr style="background-color:rgba(212,176,74,1)"><td>basic</td><td>2: Uzbek (Cyrillic), Chuvash, Sakha, Uyghur</td></tr>
+								<tr style="background-color:rgba(196,46,28,1)"><td>unrated</td><td>5: Azərbaycani (Arabic), Azərbaycani (Cyrillic), Uzbek (Arabic), Kazakh (Arabic), Tuvan, Qaraqalpaq, Qaraqalpaq (Latin), Bashqort</td></tr>
+								<tr style="background-color:rgba(117,26,24,1)"><td>missing</td><td>~30 ...</td></tr>
+							</table>
+						</div -->
+						
+				</section>
+
+				<section>
+				<section>
+					<h2>So what can we do?</h2>
+					<div class="highlight-box">
+						<h4>Caveats</h4>
+						<ul>
+							<li>Without corporate investment</li>
+							<li>Without tons of resources (financial, "data")</li>
+						</ul>
+					</div>
+					<div class="highlight-box fragment">
+						<p>Develop symbolic language technology<br/>
+						in partnership with communities<br/>
+						leveraging existing resources and linguistics</p>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h2>Morphological transducers</h2>
+					<div class="highlight-box"><h4>Symbolic models (compared to corpus-based)</h4>
+					<ul class="nobullet" style="margin-left: 1.5em;">
+						<li class="plus">Advantages:</li>
+						<ul class="shrink">
+							<li>No requirement for giant corpora</li>
+							<li>No powerful computers required</li>
+							<li>More precise than corpus-based</li>
+							<li>Easy to fix errors and expand coverage</li>
+							<li>(In MT:) lots of "free rides" for related languages</li>
+							<li>Support for multiple orthographies ~trivial <refs>(<ref>Washington et al. 2020</ref>, <ref>Washington et al. 2021</ref>)</refs></li>
+							<li>(Essentially) single development cycle <refs>(<ref>Tyers et al. 2015</ref>, <ref>Butt 2020</ref>)</refs></li>
+							<li>Only need knowledge of language, not mathematics and programming</li>
+						</ul>
+						<li class="minus">Disadvantages:</li>
+						<ul class="shrink">
+							<li>...Need knowledge of language, not mathematics and programming</li>
+							<li>Takes time to develop (human time, not computing time)</li>
+						</ul>
+						<li class="arrow">i.e., good for <span class="highlight">community partnerships</span>:<!-- in principle --><!-- span class="highlight">community-maintainable</span --></li>
+						<ul class="shrink">
+							<li>Engagement between different types of experts, as equals</li>
+							<li>Less prone to extractive &amp; other marginalising approaches</li>
+						</ul>
+					</ul>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>How can we add support for missing languages?</h2>
+
+					<div class="highlight-box">
+						<h4>The short answer</h4>
+						<p>We can't.</p>
+					</div>
+					
+					<div class="highlight-box">
+						<h4>A slightly longer answer</h4>
+						<p>By convincing each company that each language will bring in more money than they will spend to add it.</p>
+						<p>(except it probably won't, and they know that)</p>
+					</div>
+
+					<p class="fragment">So what can we do?</p>
+
+				</section>
+
+				<section>
+					<h2>So what can we do?</h2>
+					<div class="highlight-box">
+						<h4>Some possibilities</h4>
+						<ul>
+							<li>(Re)submit proposals for ISO codes<br/>(Dukhan rejected, Iraqi Türkman rejected after pending for 4 years)</li>
+							<li>Contribute to CLDR and other open localisation efforts</li>
+							<li>…</li>
+							<li class="fragment highlight">Develop our own language technology?</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2>Open/community-based efforts to develop Turkic language technology</h2>
+					<div class="float-left">
+					<div class="highlight-box"><h4>TurkicInterLingua (TIL)</h4>
+						<ul>
+							<li>Machine Translation</li>
+							<li>Other NLP tasks</li>
+						</ul>
+					</div>
+					<div class="highlight-box"><h4>Apertium</h4>
+						<ul>
+							<li>Machine Translation</li>
+							<li>Morphological transducers</li>
+						</ul>
+						<hr/>
+						<p class="shrink">(<span class="highlight">case study</span>, viz. next slides)</p>
+					</div>
+					<div class="highlight-box"><h4>Universal Dependencies</h4>
+						<div>Linguistically annotated text corpora</div>
+						<hr/>
+						<p class="shrink">Kazakh, Kyrgyz, Tatar, Turkish (×4), Uyghur</p>
+							<!-- Kazakh, Kyrgyz, Tatar, Turkish (×4), Uyghur -->
+						</ul>
+					</div>
+					</div>
+					<div class="float-right">
+					<div class="highlight-box"><h4>Common Voice</h4>
+						<div>Audio corpora (for speech recognition)</div>
+						<hr/>
+						<p class="shrink">Bashqort (277h), Uyghur (143h), Turkish (119h), Uzbek (257h), Kyrgyz (47h), Tatar (31h), Chuvash (28h), Sakha (8h), Turken (5h), Kazakh (2h), Azərbaycani (1h)</p>
+						<hr>
+						<p class="shrink">not ready: Qaraqalpaq (72%), Tuvan (2%)</p>
+							<!-- bak (277h), uig (143h), tur (119h), uzb (257h), kir (47h), tat (31h), chv (28h), sah (8h), tuk (5h), kaz (2h), azb (1h) | in progress: kaa (72%), tyv (2%) -->
+					</div>
+					<div class="highlight-box"><h4>Tesseract</h4>
+						<div>Optical Character Recognition (OCR)</div>
+						<hr/>
+						<p class="shrink">Azərbaycani (×2), Kazakh, Kyrgyz, Tatar, Turkish, Uyghur, Uzbek (×2)</p>
+							<!-- aze, aze_Cyrl, kaz, kir, tat, tur, uig, uzb, uzb_Cyrl, -->
+					</div>
+					</div>
+				</section>
+
+				</section>
+
+				<section data-auto-animate>
+					<h2>Morphological transducers</h2>
+					<div class="highlight-box"><h4>Example:<lg>eng</lg></h4>
+					<table class="nolines shrink">
+						<tr><th style="align: right; !important;">Input / Output:</th><td><b style="font-size: 125% !important">isn't</b></td>
+						<tr><th><!-- span class="highlight-green">↕</span --></th><td><span class="highlight-green large center" style="margin-left: 1.5em; text-align: center !important; font-weight: bold;">↕</span></td></tr>
+						<tr><th style="vertical-align: top !important; align: right;">Output / Input:</th><td>
+					be<tag>verb</tag><tag>pres</tag><tag>p3</tag><tag>sg</tag>+not<tag>adv</tag>
+						</td></tr>
+					</table>
+					</div>
+					<div class="highlight-box fragment"><h4>Example:<lg>kaz</lg></h4>
+					<table class="nolines shrink">
+						<tr><th style="align: right; !important;">Input / Output:</th><td><b style="font-size: 125% !important">Алмасы</b></td>
+						<tr><th><!-- span class="highlight-green">↕</span --></th><td><span class="highlight-green large center" style="margin-left: 1.5em; text-align: center !important; font-weight: bold;">↕</span></td></tr>
+						<tr><th style="vertical-align: top !important; align: right;">Output / Input:</th><td>
+					<!-- алма<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					Алмас<tag>np</tag><tag>ant</tag><tag>m</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					Алмас<tag>np</tag><tag>ant</tag><tag>m</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					Алмас<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					Алмас<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					алмас<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					алмас<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					Алма<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					Алма<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					алма<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					-->
+					алма<tag>n</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					алмас<tag>n</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					Алма<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					Алмас<tag>np</tag><tag>ant</tag><tag>m</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					<!-- Алмас<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag> -->
+					ал<tag>v</tag><tag>tv</tag><tag>neg</tag><tag>gpr_fut</tag><tag>subst</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					ал<tag>vaux</tag><tag>neg</tag><tag>gpr_fut</tag><tag>subst</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					ал<tag>v</tag><tag>tv</tag><tag>neg</tag><tag>ger_fut</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					ал<tag>vaux</tag><tag>neg</tag><tag>ger_fut</tag><tag>px3sp</tag><tag>nom</tag>
+						</td></tr>
+					</table>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Morphological transducers</h2>
+
+					<div class="highlight-box"><h4>“Downstream tasks” (uses):</h4>
+					<ul class="shrink">
+						<li><span class="highlight">Spell checkers</span></li>
+						<li>Component of <span class="highlight">machine translation systems</span></li>
+						<li>Computer-assisted <span class="highlight">language-learning<span> (CALL) <!-- e.g., Revita, <a href="https://revita.cs.helsinki.fi">revita.cs.helsinki.fi</a>) --></li>
+						<li>Script conversion</li>
+						<li>Other NLP tasks and research</li>
+						<li>Whatever else you can imagine</li>
+					</ul>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Case study: Turkic morphological transducers</h2>
+					<p>Turkic transducers I've contributed to<br/>
+					by naïve coverage &amp; lexicon size + distribution</p>
+					<div style="text-align: center"><!--  style="margin-top: -6.1em"  -->
+						<div style="width: 32%; float:left; margin-right: 1%">
+							<img src="img/lgs1.svg" style="display: block; margin-left: auto; margin-right: auto;"/>
+							<span class="highlight-green">Production-level</span><br/>92%-98% coverage<br/>
+							<span style="font-size: 60%">(<bbb>Tatar</bbb>, <bbb>Sakha</bbb>, <bbb>Kazakh</bbb>, <bbb>Turkish</bbb>, <bbb>Kyrgyz</bbb>, <bbb>Crimean Tatar</bbb>, <bbb>Tuvan</bbb>)</span>
+						</div>
+						<div style="width: 35%; float:left; margin-right: 1%">
+							<img src="img/lgs2.svg" style="display: block; margin-left: auto; margin-right: auto;"/>
+							<span class="highlight">Working</span><br/>88-93% coverage<br/>
+							<span style="font-size: 60%">(Chuvash, <bbb class="maybe">Uzbek</bbb>, <bbb>Bashqort</bbb>, <bbb class="maybe">Qaraqalpaq</bbb>, <bbb class="maybe">Uyghur</bbb>, Karachay-Balkar, <span class="faded"><bbb>Gagauz</bbb></span>, <bbb>Kumyk</bbb>)</span>
+						</div>
+						<div style="width: 30%; float:left;">
+							<img src="img/lgs3.svg" style="display: block; margin-left: auto; margin-right: auto;"/>
+							<span class="highlight-red">Prototype</span><br/>&lt;80% coverage<br />
+							<span style="font-size: 60%">(<span class="faded">Azerbaycani</span>, Iraqi Türkman, <bbb class="faded maybe">Turkmen</bbb>, Noghay, Khakas, Altay, <span class="faded">Ottoman</span>)</span>
+						</div>
+						<div class="small">key: <span class="faded">not directly involved in</span>, <bbb>published</bbb></div>
+					</div>
+
+					<span class="large">(</span><div style="display: inline-block; width: 95%; margin-top: 0.75em">
+						<refs>
+							<ref class="highlight-cyan">Washington et al. (2012)</ref><!-- kir -->,
+							<ref class="highlight-cyan">Tyers et al. (2012)</ref><!-- tat, bak (tat-bak) -->,
+							<ref class="highlight-cyan">Salimzyanov et al. (2013)</ref><!-- kaz (kaz-tat)-->,
+							<ref class="highlight-cyan">Washington et al. (2014)</ref><!-- kaz, kum, tat -->,
+							<ref class="highlight-cyan">Tyers et al. (2016)</ref><!-- tyv -->,
+							<ref class="highlight-cyan">Washington et al. (2016)</ref><!-- tyv -->,
+							<ref class="highlight-cyan">Bayatlı et al. (2018)</ref><!-- tur (kaz-tur) -->,
+							<ref class="highlight-cyan">Tyers et al. (2019)</ref><!-- crh -->,
+							<ref class="highlight-cyan">Gökırmak et al. (2019)</ref><!-- crh, tur (crh-tur) -->,
+							<ref class="highlight-cyan">Washington et al. (2019)</ref><!-- all -->,
+							<ref class="highlight-cyan">Washington et al. (2020)</ref><!-- crh, kaz, kir, kaa, tuk, uig, uzb -->,
+							<ref class="highlight-cyan">Ivanova et al. (2021, 2022)</ref><!-- sah -->
+						</refs>
+					</div><span class="large">)</span>
+				</section>
+
+
+				<section data-auto-animate>
+					<h2>Case study: Turkic morphological transducers</h2>
+					<p>Transducers I've contributed to: downstream tasks</p>
+					<div class="float-left">
+					<div class="highlight-box"><h4>Kazakh</h4>
+						<ul class="shrink">
+							<li>Used in other NLP research in Kazakhstan</li>
+							<li>Use as segmenter in a shared task</li>
+							<li>Spell checker for Word &amp; LibreOffice</li>
+							<li>Verb paradigm generator</li>
+						</ul>
+					</div><div class="highlight-box"><h4>Tatar</h4>
+						<ul class="shrink">
+							<li>Used to annotate Tatar National Corpus</li>
+							<li>Spell checker for Word &amp; LibreOffice</li>
+						</ul>
+					</div><div class="highlight-box"><h4>Uyghur</h4>
+						<ul class="shrink">
+							<li>Used in corpus-based phonology research</li>
+						</ul>
+					</div></div>
+					<div class="float-right">
+					<div class="highlight-box"><h4>Tuvan</h4>
+						<ul class="shrink">
+							<li>Used for UniMorph shared task (2021)</li>
+							<li>Spell checker for Word &amp; LibreOffice</li>
+						</ul>
+					</div><div class="highlight-box"><h4>Sakha</h4>
+						<ul class="shrink">
+							<li>Used in Revita (CALL)</li>
+							<li>Used for UniMorph shared task (2021)</li>
+						</ul>
+					</div><div class="highlight-box"><h4>Kyrgyz</h4>
+						<ul class="shrink">
+							<li>Spell checker for Word &amp; LibreOffice</li>
+							<li>Used for annotating published corpora</li>
+						</ul>
+					</div>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Ling 073: Computational Linguistics</h2>
+					<ul style="margin-bottom: 1em">
+						<li>Taught almost every spring (currently 7th run)</li>
+						<li>~15-20 students each year</li>
+						<li>Prereq: CS or Ling background</li>
+						<li>Students usually work in pairs or small groups</li>
+						<li>Develop language technology for minoritised language of choice</li>
+						<li>Have to work with grammars, dictionaries, original texts—often very limited</li>
+						<li>Implement tools using a wide range of computational formalisms</li>
+
+					</ul>
+					<div class="highlight-box">
+						<!--
+							2017: 17t, 8t
+							2018: 8t, 5mt
+							2019: 5t, 5mt
+							2021: 9t, 9mt
+							2022: 8t, 8mt
+							2023: 10t, 10mt
+							2025: 9t, 8mt?
+							pre-2025 total: 57t, 45mt
+						-->
+						<!-- ul>
+							<li>pre-2025: transducers and MT systems for ~57 languages</li>
+							<li>2025: 10 more languages</li>
+						</ul -->
+							<p>transducers &amp; MT systems developed:</p>
+							<table class="booktabs">
+								<tr><th>2017-2023</th><th>2025 (in progress)</th></tr>
+								<tr><td>~57</td><td>10</td></tr>
+							</table>
+							<br/>
+
+					</div>
+				</section>
+
+				<section data-background-image="©img/Donetsk_in_Ukraine.svg" data-background-size="90%" data-background-opacity="0.2" data-auto-animate>
+					<h2>Urum</h2>
+					<div class="highlight-box">
+						<h4>Background</h4>
+						<ul>
+							<li>Turkic language spoken by ethnic Greeks</li>
+							<li>primarily spoken around Mariupol, Ukraine</li>
+							<li>Children have not been raised speaking the language</li>
+							<ul>
+								<li>2000: estimated 190k speakers <span class="citation">(Ethnologue 2015)</span></li>
+								<li>2023: estimated 1k speakers <span class="citation">(Ethnologue 2023)</span></li>
+							</ul>
+							<li>Currently:</li>
+							<ul>
+								<li>Increasing ethnic pride</li>
+								<li>Active interest in language</li>
+								<li>Engaged community of adult learners online</li>
+							</ul>
+						</ul>
+					</div>
+				</section>
+
+				<section data-background-image="©img/Donetsk_in_Ukraine.svg" data-background-size="90%" data-background-opacity="0.2" data-auto-animate>
+					<h2>Urum</h2>
+					<div class="highlight-box">
+						<h4>Spring 2023 work</h4>
+						<ul>
+							<li>Ling 073, in pair with Sasha Casada '24</li>
+							<li>Developed morphological transducer</li>
+							<li>Very limited resources to work from</li>
+							<li>Developed machine translation system to English</li>
+						</ul>
+					</div>
+				</section>
+
+				<section data-background-image="©img/Donetsk_in_Ukraine.svg" data-background-size="90%" data-background-opacity="0.2" data-auto-animate>
+					<h2>Urum</h2>
+					<div class="highlight-box">
+						<h4>Planned summer 2025 work</h4>
+						<ul>
+							<li>Plan to develop tools for community</li>
+							<li><span class="highlight">Web-based tools for revitalisation:</span> form and paradigm generators</li>
+							<li>For use as language learning materials</li>
+							<li>Based on Urum morphological transducer</li>
+							<li>Localised in Russian, Ukrainian</li>
+							<li>Hope to be in touch with community</li>
+						</ul>
+					</div>
+
+				</section>
+
+				<section>
+					<h2 class="extralarge">Concluding thoughts</h2>
+					
+					<!-- ul>
+						<li>Language technology is important when considering language vitality</li>
+						<li>It probably isn't the most major consideration</li>
+						<li>It <em>can</em> be one area to contribute to</li>
+						<li>But there are many other areas</li>
+					</ul -->
+				</section>
+
+				<section>
+				<section>
+					<h2 class="extralarge">Thank you!</h2>
+					<p>slides available at<br/><a href="https://jonorthwash.github.io/2025-TurkicLangTech/presentation.html">https://jonorthwash.github.io/2025-TurkicLangTech/presentation.html</a><br/>
+					<img src="img/presentation_qrcode.png"/>
+					</p>
+				</section>
+
+				<section data-auto-animate>
+
+
+
+
+					<h2>Case study: Turkic morphological transducers</h2>
+					<p>Free/Open Source (versus proprietary)</p>
+					<div class="highlight-box" >
+						<h4>Free/Open Source</h4>
+						<!-- Free = бесплатно + свободно<br />
+						Open = открыто + доступно -->
+						<span class="highlight">Free</span> = as in speech (and beer)<br />
+						<span class="highlight">Open</span> = made available (and insides showing)
+					</div>
+					<div class="highlight-box"><h4>What this means (ideally / in the case of Apertium):</h4>
+						<ul>
+							<li>Available for anyone to use, modify, or build on</li>
+							<li>Robust community, support from developers</li>
+							<li>Able to easily compare to other systems</li>
+							<li>Abandoned projects can be resumed or repurposed</li>
+							<li>Standards / tools for wider integration/use <span class="shrink">(e.g., Apertium: website platform, integration into OmegaT &amp; Wikipedia Content Translation tool)</span></li>
+						</ul>
+						<p>→ i.e., <!-- in principle --><span class="highlight">maximally accessible to language communities</span></p>
+					</div>
+						<!-- li class="fragment">still some bars to entry:
+							<ul>
+								<li>finding IRC channel &amp; issue tracker</li>
+								<li>contributing code...</li>
+						</ul></li>
+						<li class="fragment">solutions?
+							<ul>
+								<li>workshops for prospective contributors</li>
+								<li>individual attention and support</li>
+								<li>close collaborations</li>
+							</ul>
+						</li -->
+					</ul>
+
+				</section>
+
+				<!-- section>
+					<h2>Corpus-based approaches vs. symbolic approaches</h2>
+					(CITE Butt 2021)
+				</section -->
+
+				<section>
+					<h2>Integrating community efforts</h2>
+					<!-- (CITE Moshagen &amp; Trosterud 2019)-->
+					<!-- ul class="shrink nobullet">
+						<li>Manifesto for Open Language Technology</li>
+						<em><ul class="shrink">
+							<li><bbb>Open localisation</bbb>: all software should be localisable independently of the producer of the software</li>
+							<li><bbb>Open interfaces</bbb>: all language-related programming interfaces should be open by default</li>
+							<li><bbb>Open resources</bbb>: all language resources should be open and accessible for everyone, given the permission of the language community</li>
+							<li><bbb>Accessible standards</bbb>: language-related international standards should be respected, fully implemented and implementations should be regularly updated</li>
+						</ul></em>
+					</ul-->
+					<div class="highlight-box">
+						<h4>The real challenges</h4>
+						<ul>
+							<li><span class="highlight">Localisation</span>: much software is not localisable independently of the producer of the software</li>
+							<li><span class="highlight">Closed interfaces</span>: language-related programming interfaces are often closed to developers</li>
+							<li><span class="highlight">Closed resources</span>: language resources are closed and not accessible to the public</li>
+							<li><span class="highlight">Disregarded standards</span>: language-related international standards are not respected or fully implemented</li>
+						</ul>
+						<div class="citation raln">(Moshagen &amp; Trosterud 2019)</div>
+					</div>
+					<div class="highlight-box fragment">
+						<h4>Some hope</h4>
+						<ul>
+							<li>Challenges can be overcome with effort</li>
+							<li>Sometimes corporations make positive change on their own</li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>But does language technology actually help?</h2>
+
+					<p class="fragment">Maybe a little?</p>
+
+					<div class="fragment highlight-box">
+						<h4>What communities actually need</h4>
+						<ul>
+							<li>Support for language use, maintenance, revitalisation</li>
+							<li>From government, society, other institutions</li>
+							<li>(not just digital technology corporations)</li>
+						</ul>
+					</div>
+
+					<div class="fragment highlight-box">
+						<h4>How to make these things happen</h4>
+						<p>my best suggestion: <span class="highlight">general tools of change</span></p>
+						<hr/>
+						<ul>
+							<li>organise,</li>
+							<li>take action,</li>
+							<li>leverage privilege to lift up marginalised voices,</li>
+							<li>advocate,</li>
+							<li>etc.</li>
+						</p>
+					</div>
+					<div class="fragment highlight-box">
+						<h4>Taking action</h4>
+						<p>find a need that you can contribute to and contribute</p>
+					</div>
+				</section>
+				</section>
+
+			</div>
+		</div>
+
+		<!-- script src="./reveal.js/lib/js/head.min.js"></script -->
+		<script src="./reveal.js/dist/reveal.js"></script>
+		<script src="./reveal.js/plugin/notes/notes.js"></script>
+		<script src="./reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="./reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="./reveal.js/plugin/zoom/zoom.js"></script>
+
+		<!-- Chart plugin -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chart/plugin.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+		
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				viewDistance: 20,
+				controls: true,
+				progress: true,
+				center: true,
+				history: true,
+				hash: true,
+
+				// The "normal" size of the presentation, aspect ratio will be preserved
+				// when the presentation is scaled to fit different resolutions. Can be
+				// specified using percentage units.
+				width: 1280, //960,
+				//height: 720, //700,
+				height: 1024,
+				//width: 960,
+				//height: 700,
+
+				// Factor of the display size that should remain empty around the content
+				margin: 0.1,
+
+				// Bounds for smallest/largest possible scale to apply to content
+				minScale: 0.2,
+				maxScale: 1.0,
+
+				//theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				// transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Shows the slide number using default formatting
+				//Reveal.configure({ slideNumber: true });
+				//slideNumber: true,
+
+				//if true (default), fragments are generated on separate pages of pdfs
+				//pdfSeparateFragments: false,
+
+				// Slide number formatting can be configured using these variables:
+				//  "h.v":  horizontal . vertical slide number (default)
+				//  "h/v":  horizontal / vertical slide number
+				//    "c":  flattened slide number
+				//  "c/t":  flattened slide number / total slides
+				//Reveal.configure({ slideNumber: 'c' });
+				slideNumber: 'c',
+
+	chart: {
+		defaults: {
+			color: 'lightgray', // color of labels
+			scale: {
+				beginAtZero: true,
+				ticks: { stepSize: 1 },
+				grid: { color: "lightgray" } , // color of grid lines
+			},
+			plugins: {
+				tooltip: {
+					bodyFont: {size: 30}
+				},
+				legend: {
+					position: "right",
+					labels: {
+						font: { size: 40 },
+						fontColor: '#000'
+					}
+				},
+				datalabels: {
+					display: true,
+					font: {size: 20},
+				},
+			}
+		},
+		line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] },
+		bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]},
+		pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+		doughnut: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ],
+		options: {
+			plugins: {
+				datalabels: {
+					display: true,
+					font: {size: 20},
+				},
+			},},
+		},
+	},
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional reveal.js plugins
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				/***
+				dependencies: [
+					{ src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './reveal.js/plugin/highlight/highlight.js' },
+					{ src: './reveal.js/plugin/search/search.js', async: true },
+					{ src: './reveal.js/plugin/zoom-js/zoom.js', async: true },
+					{ src: './reveal.js/plugin/notes/notes.js', async: true }
+				]
+				***/
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealChart, RevealMarkdown, RevealZoom, RevealHighlight, RevealNotes ]
+			});
+
+		</script>
+
+	</body>
+</html>
