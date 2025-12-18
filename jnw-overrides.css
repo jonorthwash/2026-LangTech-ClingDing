@@ -114,6 +114,7 @@ bbb {
 	border: 3px solid lightgreen;
 	border-radius: 8pt;
 	margin-bottom: 0.5em;
+	position: relative;
 }
 
 .highlight-box h4 {
@@ -966,4 +967,17 @@ ref {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 100%;
+}
+
+.number {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	z-index: 9999;
+	/* border-right: 4px solid lightgreen;
+	border-bottom: 4px solid lightgreen; */
+	border-radius: 8pt;
+	background: rgba(255, 255, 255, 0.6) !important;
+	width: 0.9em;
+	color: black;
 }
