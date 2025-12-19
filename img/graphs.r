@@ -60,6 +60,6 @@ make_graph <- function(name, xax=T, yax=T, leg=T, asp_ratio=0.8) {
 	ggsave(paste(name, ".svg", sep=""), device="svg", height = height, width = height * aspect_ratio)
 }
 
-make_graph("lgs1", F, T, F, 0.8)
+make_graph("lgs1", F, T, F, 0.9)
 make_graph("lgs2", F, F, F, 0.9)
-make_graph("lgs3", F, F, T, 0.8)
+make_graph("lgs3", F, F, T, 0.85)
