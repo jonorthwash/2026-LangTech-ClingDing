@@ -9,7 +9,7 @@ make_graph <- function(name, xax=T, yax=T, leg=T, asp_ratio=0.8) {
 	types = c("Nouns", "Proper Nouns", "Verbs", "Adjectives", "Other")
 	allLgs = c("tat", "sah", "kaz", "tur", "kir", "crh", "tyv",
 		"chv","uzb","bak","kaa","uig","krc","gag","kum",
-		"aze","tki","tuk","nog","kjh","alt","ota")
+		"aze","tki","tuk","nog","kjh","uum", "alt","ota")
 
 	lgs1_new <- data.frame(language=factor(levels=allLgs), type=factor(levels=rev(types)), value=integer(),stringsAsFactors=FALSE)
 	#print(lgs1_new)
