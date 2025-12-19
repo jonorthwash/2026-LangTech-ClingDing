@@ -99,11 +99,12 @@
 									<li>Why LT is important?</li>
 								</ul -->
 								<li>The relationship between LT and vitality</li>
-								<li>Case study: Turkic languages</li>
+								<li>Example: Turkic languages</li>
 								<ul class="shrink">
 									<li>Vitality</li>
-									<li>Corporate Language technology</li>
-									<li>Community-led language technology</li>
+									<li>Corporate LT</li>
+									<li>Community-led LT</li>
+									<li>Morphological transducers</li>
 									<li>The disconnect</li>
 								</ul>
 								<li>Integrating comunity efforts</li>
@@ -1201,7 +1202,7 @@ unused
 						<div style="width: 30%; float:left;">
 							<img src="img/lgs3.svg" style="display: block; margin-left: auto; margin-right: auto;"/>
 							<span class="highlight-red">Prototype</span><br/>&lt;80% coverage<br />
-							<span style="font-size: 60%">(<span class="faded">Azerbaycani</span>, Iraqi Türkman, <bbb class="faded maybe">Turkmen</bbb>, Noghay, Khakas, Altay, <span class="faded">Ottoman</span>)</span>
+							<span style="font-size: 60%">(<span class="faded">Azerbaycani</span>, Iraqi Türkman, <bbb class="faded maybe">Turkmen</bbb>, Noghay, Khakas, Urum, Altay, <span class="faded">Ottoman</span>)</span>
 						</div>
 						<div class="small">key: <span class="faded">not directly involved in</span>, <bbb>published</bbb></div>
 					</div>
@@ -1227,7 +1228,7 @@ unused
 
 				<section data-auto-animate>
 					<h2>Case study: Turkic morphological transducers</h2>
-					<p>Transducers I've contributed to: downstream tasks</p>
+					<p>Transducers I've contributed to: <span class="highlight">downstream tasks</span></p>
 					<div class="float-left">
 					<div class="highlight-box"><h4>Kazakh</h4>
 						<ul class="shrink">
@@ -1266,18 +1267,68 @@ unused
 					</div>
 				</section>
 
-
-
-				<section>
-				<section>
-					<h2>So what can we do?</h2>
-					<div class="highlight-box">
-						<h4>Caveats</h4>
+				<section data-auto-animate>
+					<h2>Case study: Turkic morphological transducers</h2>
+					<div class="highlight-box"><h4><span class="highlight">Downstream tasks</span> with potential uses by communities</h4>
 						<ul>
-							<li>Without corporate investment</li>
-							<li>Without tons of resources (financial, "data")</li>
+							<li>Spell checkers</li>
+							<ul class="shrink">
+								<li><span class="highlight-green">Solutions</span> for integration with some environments <span class="citation">(Word, LibreOffice)</span></li>
+								<li><span class="highlight">Hard</span> to add at OS level <span class="citation">(Windows, macOS, iOS, Android, ChromeOS)</span></li>
+								<li><span class="highlight-red">Nigh impossible</span> to integrate seamlessly in cloud platforms <span class="citation">(Google Docs, MS Office 365)</span></li>
+							</ul>
+							<li>Computer-aided language learning (CALL)</li>
+							<ul class="shrink">
+								<li>Paradigm generators <span class="citation">(Apertium Paradigmatrix)</span></li>
+								<li>Morphological dictionaries <span class="citation">(Morphodict, Apertium Dictionary Mode)</span></li>
+								<li>Text-reading support <span class="citation">(Revita, Geriaoueg)</span></li>
+							</ul>
+							<li>Machine Translation <span class="citation">(Apertium, Giellatekno)</span>
+							<ul class="shrink">
+								<li>For saving limited translator/editor time when generating content speakers interact with</li>
+								<li>Available as stand-alone websites and local services</li>
+								<li>Possible to integrate into some word processors, browsers</li>
+							</ul>
 						</ul>
 					</div>
+
+				</section>
+
+				<section>
+				<section>
+					<h2>Flipping the picture</h2>
+					<div class="highlight-box">
+						<h4>A different approach</h4>
+						<ul>
+							<li>Transducers → potential uses</li>
+							<li>Community needs → what can be done</li>
+							<li>Also consider: not all "low-resource" settings are the same <span class="citation">(Liu et al. 2022)</span></li>
+						</ul>
+					</div>
+
+					<div>
+<!--
+		  ignoring issues of orthography, standardisation, politics, etc. (all important!)
+						Language A: Non-European national language, millions of speakers, historically ignored but recent attention from big-corporation has resulted in seamless tools, plenty of "in-house" specialists in language and NLP, large corpora, growing localisation
+						Language B: Large regional language, hundreds of thousands of speakers, occasional corporate interest, spotty corpus availability, small number of "in-house" language & NLP specialists, localisation spotty
+						Language C: Small regional language, (tens of) thousands of speakers but increasingly fewer young ones, some outside scholarly interest, some activists who care about the language: a couple "in-house" language or NLP specialists, although mostly self-taught
+						Language D: Only a few fluent L1 speakers, mostly elders; some outside scholarly interest; small community of adult learners; some published texts and other resources
+
+					Lang A - priorities: voice assistants, screenreaders, updates to keyboards that everyone finds annoying,
+					Lang B - priorities: seamless keyboard instead of app you have to install on everyone's phones, localisation, search engine support
+					Lang C - priorities: keyboards, localisation, spelling and grammar checking, MT (for quick media generation), 
+					Lang D - priorities: keyboards, CALL, anything that raises interest & awareness & helps produce new speakers
+
+
+-->
+</div>
+
+
+				</section>
+
+				<section>
+
+
 					<div class="highlight-box fragment">
 						<p>Develop symbolic language technology<br/>
 						in partnership with communities<br/>
