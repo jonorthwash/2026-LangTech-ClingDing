@@ -58,7 +58,7 @@
 
 
 				<section id="title" data-state="no-toc-progress">
-					<h1>Creating meaningful language technology for minoritised languages</h1>
+					<h1>creating MEANINGFUL language technology for minoritised languages</h1>
 
 					<div style="padding-top:1in; padding-bottom: 2in;">
 						<div><b>Jonathan N. Washington</b><br />
@@ -66,7 +66,7 @@
 					</div>
 
 					<div style="font-style: italic">
-						SPELL conference, 2025-12-20
+						SPELLL conference, 2025-12-20
 					</div>
 
 					<div style="width: 98%; background: white; margin-left: auto; margin-right: auto; margin-top: 1em; margin-bottom: 1em;">
@@ -1356,10 +1356,10 @@ unused
 							<th>Language Technology</th>
 							<th>Resource availability</th>
 							<th>Local expertise in Lg &amp; NLP</th>
-							<th class="fragment">Community priorities</th>
+							<th class="fragment" data-fragment-index="6">Community priorities</th>
 						</tr>
 						<tr style="border-bottom: 2px solid grey;">
-							<th><span class="highlight">Language A</span> <span class="fragment">(350)</span></span></th>
+							<th><span class="highlight">Language A</span> <span class="fragment" data-fragment-index="2">(350)</span></span></th>
 							<td>"small" national language</td>
 							<td>≥1M, &lt;10M </td>
 							<td>some big corporations</td>
@@ -1368,10 +1368,10 @@ unused
 							<!-- td>Several large corpora</td -->
 							<td>large corpora</td>
 							<td>plenty</td>
-							<td class="fragment"><ul><li>voice assistants</li><li>screenreaders</li><li>updates to keyboards that everyone finds annoying</li></ul></td>
+							<td class="fragment" data-fragment-index="7"><ul><li>voice assistants</li><li>screen readers</li><li>updates to keyboards that everyone finds annoying</li></ul></td>
 						</tr>
 						<tr style="border-bottom: 2px solid grey;">
-							<th><span class="highlight">Language&nbsp;B</span> <span class="fragment">(1K)</span></span></th>
+							<th><span class="highlight">Language&nbsp;B</span> <span class="fragment" data-fragment-index="3">(1K)</span></span></th>
 							<td>"large" regional language</td>
 							<td>≥100K, &lt;1M</td>
 							<td>occasional corporate</td>
@@ -1380,27 +1380,27 @@ unused
 							<!-- td>Spotty corpus coverage</td -->
 							<td>copora <span class="citation">(spotty)</span></td>
 							<td>some</td>
-							<td class="fragment"></td>
+							<td class="fragment" data-fragment-index="7"><ul><li>seamless keyboard instead of stand-alone app</li><li>localisation</li><li>search engine support</li></ul></td>
 						</tr>
 						<tr style="border-bottom: 2px solid grey;">
-							<th><span class="highlight">Language&nbsp;C</span> <span class="fragment">(3.8K)</span></th>
+							<th><span class="highlight">Language&nbsp;C</span> <span class="fragment" data-fragment-index="4">(3.8K)</span></th>
 							<td>"small" regional language</td>
 							<td>≥1K, &lt;100K, <span class="citation">increasingly few young</span></td>
 							<td>some academic</td>
 							<td>a couple local web-based tools</td>
 							<td>some published literature</td>
 							<td>some "activists", <span class="citation">mostly self-taught</span></td>
-							<td class="fragment"></td>
+							<td class="fragment" data-fragment-index="7"><ul><li>pred. text keyboards</li><li>localisation</li><li>spelling and grammar checking</li><li>MT (for quick media generation)</li></ul></td>
 						</tr>
 						<tr>
-							<th><span class="highlight">Language&nbsp;D</span> <span class="fragment">(764)</span></th>
+							<th><span class="highlight">Language&nbsp;D</span> <span class="fragment" data-fragment-index="5">(764)</span></th>
 							<td>extremely "endangered" language</td>
 							<td>&lt;100 fluent L1, <span class="citation">mostly elders</span></td>
 							<td>some academic</td>
 							<td>none</td>
 							<td>some published texts, <span class="citation">mostly collected narratives</span></td>
 							<td>adult learners <span class="citation">(small community)</span></td>
-							<td class="fragment"></td>
+							<td class="fragment" data-fragment-index="7"><ul><li>simple keyboards</li><li>CALL</li><li>anything that raises interest &amp; awareness &amp; helps produce new speakers</li></ul></td>
 						</tr>
 					</table>
 
@@ -1476,7 +1476,7 @@ unused
 -->
 				</section>
 
-				<section data-auto-animate>
+				<!-- section data-auto-animate>
 					<h2 data-id="loresdiff"><span>not all "low-resource" settings are the same</span></h2>
 
 					<table data-id="lgtbl" class="shrink booktabs ultbl" style="width: 140%; margin: auto auto auto -20%">
@@ -1531,11 +1531,210 @@ unused
 							<td><ul style="display: block; margin: 0 !important;"><li>keyboards</li><li>CALL</li><li>anything that raises interest & awareness & helps produce new speakers</li></td>
 						</tr>
 					</table>
+				</section -->
+
+				<section data-auto-animate>
+					<h2>Practicality of community priorities</h2>
+					<table class="shrink booktabs ultbl" style="width: 140%; margin: auto auto auto -20%">
+						<tr>
+							<th></th>
+							<th>can be developed privileging local agency</th>
+							<th>releasable as/in stand-alone product / sufficient?</th>
+							<th>can be developed without large corpus</th>
+							<th>integrable into popular platforms</th>
+							<th>popular tools can be updated/corrected</th>
+							<th></th>
+						</tr>
+						<tr style="border-bottom: 2px solid grey;">
+							<th style="text-align: left !important">search engine support</th>
+							<td class="highlight-green" style="text-align: center; vertical-align: middle;">✔</td>
+							<td class="highlight-red" style="text-align: center; vertical-align: middle;">✘ / &ndash;</td>
+							<td class="highlight-red" style="text-align: center; vertical-align: middle;">✘</td>
+							<td class="highlight-red" style="text-align: center; vertical-align: middle;">✘</td>
+							<td class="highlight-red" style="text-align: center; vertical-align: middle;">✘</td>
+
+						</tr>
+						<tr style="border-bottom: 2px solid grey;">
+							<th style="text-align: left !important">voice assistants</th>
+							<td class="highlight-green" style="text-align: center">✔</td>
+							<td style="text-align: center"><span class="highlight-green">✔</span> / <span class="highlight-red">✘</span></td>
+							<td class="highlight-red" style="text-align: center">✘</td>
+							<td class="highlight-red" style="text-align: center">✘</td>
+							<td class="highlight-red" style="text-align: center">✘</td>
+						</tr>
+						<tr style="border-bottom: 2px solid grey;">
+							<th style="text-align: left !important">localisation</th>
+							<td class="highlight-green" style="text-align: center">✔</td>
+							<td style="text-align: center"><span class="highlight-green">✔</span> / <span class="highlight-red">✘</span></td>
+							<td class="highlight-green" style="text-align: center">✔</td>
+							<td class="highlight-red" style="text-align: center">✘</td>
+							<td class="highlight-red" style="text-align: center">✘</td>
+
+						</tr>
+						<tr style="border-bottom: 2px solid grey;">
+							<th style="text-align: left !important">spelling/grammar checking</th>
+							<td class="highlight-green" style="text-align: center; vertical-align: middle;">✔</td>
+							<td style="text-align: center; vertical-align: middle;"><span class="highlight-green">✔</span> / <span class="highlight-red">✘</span></td>
+							<td class="highlight-green" style="text-align: center; vertical-align: middle;">✔</td>
+							<td style="text-align: center; vertical-align: middle;"><span class="highlight-green">✔</span>/<span class="highlight-red">✘</span></td>
+							<td class="highlight-red" style="text-align: center; vertical-align: middle;">✘</td>
+
+						</tr>
+						<tr style="border-bottom: 2px solid grey;">
+							<th style="text-align: left !important">simple keyboards</th>
+							<td class="highlight-green" style="text-align: center; vertical-align: middle;">✔</td>
+							<td class="highlight-green" style="text-align: center; vertical-align: middle;">✔ / <span class="highlight">~✔</span></td>
+							<td class="highlight-green" style="text-align: center; vertical-align: middle;">✔</td>
+							<td style="text-align: center; vertical-align: middle;"><span class="highlight-green">✔</span>/<span class="highlight-red">✘</span></td>
+							<td class="highlight-red" style="text-align: center; vertical-align: middle;">✘</td>
+						</tr>
+
+						<tr style="border-bottom: 2px solid grey;">
+							<th style="text-align: left !important">predictive text keyboards</th>
+							<td class="highlight-green" style="text-align: center; vertical-align: middle;">✔</td>
+							<td class="highlight-green" style="text-align: center; vertical-align: middle;">✔ / <span class="highlight">~✔</span></td>
+							<td class="highlight" style="text-align: center; vertical-align: middle;">~✔</td>
+							<td style="text-align: center; vertical-align: middle;"><span class="highlight-red">✘</span></td>
+							<td class="highlight-red" style="text-align: center; vertical-align: middle;">✘</td>
+						</tr>
+						<tr style="border-bottom: 2px solid grey;">
+							<th style="text-align: left !important">screen readers</th>
+							<td class="highlight-green" style="text-align: center">✔</td>
+							<td class="highlight-green" style="text-align: center">✔ / ✔</td>
+							<td class="highlight-green" style="text-align: center">✔</td>
+							<td class="highlight-red" style="text-align: center">✘</td>
+							<td class="highlight-red" style="text-align: center">✘</td>
+						</tr>
+
+						<tr style="border-bottom: 2px solid grey;">
+							<th style="text-align: left !important">MT</th>
+							<td class="highlight-green" style="text-align: center">✔</td>
+							<td class="highlight-green" style="text-align: center">✔ / ✔</td>
+							<td class="highlight-green" style="text-align: center">✔</td>
+							<td class="highlight-red" style="text-align: center">✘</td>
+							<td class="highlight-red" style="text-align: center">✘</td>
+
+						</tr>
+						<tr>
+							<th style="text-align: left !important">CALL</th>
+							<td class="highlight-green" style="text-align: center">✔</td>
+							<td class="highlight-green" style="text-align: center">✔ / ✔</td>
+							<td class="highlight-green" style="text-align: center">✔</td>
+							<td class="highlight-red" style="text-align: center">✘</td>
+							<td class="highlight-red" style="text-align: center">✘</td>
+
+						</tr>
+
+					</table>
+
+				</section>
+
+				<section data-auto-animate>
+					<h2>Practicality of community priorities</h2>
+					<div class="highlight-box">
+						<h4>Privileging local agency</h4>
+						<ul>
+							<li>Everything for marginalised languages can be developed privileging local agency</li>
+							<li>Almost nothing actually is</li>
+						</ul>
+					</div>
+					<div class="highlight-box">
+						<h4>Integration</h4>
+						<ul>
+							<li>Many tools are not sufficient as stand-alone products</li>
+							<li>It's almost impossible to integrate most tools into popular platforms</li>
+							<li>It's entirely impossible to update/correct popular tools</li>
+						</ul>
+					</div>
+
+				</section>
+
+				<section data-auto-animate>
+					<h2>Privileging local agency</h2>
+					<div class="highlight-box">
+						<h4>The specific challenges</h4>
+						<ul>
+							<li><span class="highlight">Localisation</span>: much software is not localisable independently of the producer of the software</li>
+							<li><span class="highlight">Closed interfaces</span>: language-related programming interfaces are often closed to developers</li>
+							<li><span class="highlight">Closed resources</span>: language resources are closed and not accessible to the public</li>
+							<li><span class="highlight">Disregarded standards</span>: language-related international standards are not respected or fully implemented</li>
+						</ul>
+						<div class="citation raln">(Moshagen &amp; Trosterud 2019)</div>
+					</div>
+
+					<div class="highlight-box">
+						<h4>Stepping back</h4>
+							<p>Shuts out communities and those supporting them</p>
+							<p>… also just bad design (but intentionally so!)</p>
+						</ul>
+					</div>
+
+					<div class="highlight-box fragment">
+						<h4>Why???</h4>
+						<p class="fragment">Corporate profit models often demand this</p>
+					</div>
+
+				</section>
+
+				<section data-auto-animate>
+					<h2>Privileging local agency</h2>
+
+					<div class="highlight-box">
+						<h4>What can be done?</h4>
+						<ul>
+							<li>Demand from your corporations <span class="citation">(per Moshagen &amp; Trosterud 2019)</span></li>
+							<ul class="shrink">
+								<li>Open localisation</li>
+								<li>Open interfaces</li>
+								<li>Open resources</li>
+								<li>Accessible standards
+							</ul>
+							<span class="shrink">Caveat: some communities have <span class="highlight">data sovereignty</span> requirements <span class="citation">(Mahelona 2020)</span></span>
+							<li>Support community priorities, privilege local agency<br/>(and ask your corporations to as well)<br/><div class="shrink">Caveat: engagement with a community can take forms that do not privilege local agency <span class="citation">(Long 2007, Romero 2016)</span></div></li>
+							<li>Focus on technology that can be meaningful without full integration</li>
+							<li><span class="highlight">Close the loop:</span> make the results of your work available to communities</li>
+						</ul>
+					</div>
+
+					<div class="highlight-box">
+						<h4>Why?</h4>
+						<ul class="checklist">
+							<li>Bring value to marginalised communities</li>
+							<li>Help prevent "digital language death"</li>
+							<li>Be an ethical language technologist</li>
+						</ul>
+					</div>
+
+					<!-- div class="highlight-box">
+						<h4>Caveat</h4>
+						<ul>
+							<li>Some communities have <span class="highlight">data sovereignty</span> requirements <span class="citation">(Mahelona 2020)</span></li>
+						</ul>
+					</div>
+
+					<div class="highlight-box">
+						<h4>Caveat</h4>
+						<ul>
+							<li>Engagement with a community can take forms that do not privilege local agency <span class="citation">(Long 2007, Romero 2016)</span></li>
+						</ul>
+					</div -->
 				</section>
 
 
 				<section>
 					<h2 class="extralarge">Concluding thoughts</h2>
+					<ul>
+						<li>Some corporations move in the right direction on their own</li>
+						<li>Many move the wrong direction (cf. spell-checking)</li>
+						<li>Capitalist corporate profit models will always push companies in the wrong direction</li>
+						<li>The options as I see them are:</li>
+						<ul class="checklist">
+							<li>resist through counterculture (DIY LT)</li>
+							<li>resist through protest / demands / threats to image</li>
+							<li>resist from the inside</li>
+							<li class="X">go along with it</li>
+						</ul>
+					</ul>
 					
 					<!-- ul>
 						<li>Language technology is important when considering language vitality</li>
@@ -1547,7 +1746,7 @@ unused
 
 				<section>
 				<section>
-					<h2 class="extralarge">Thank you!</h2>
+					<h2 class="extralarge">വളരെ നന്ദി!<br/>Thank you!</h2>
 					<p>slides available at<br/><a href="https://jonorthwash.github.io/2025-TurkicLangTech/presentation.html">https://jonorthwash.github.io/2025-TurkicLangTech/presentation.html</a><br/>
 					<img src="img/presentation_qrcode.png"/>
 					</p>
@@ -1598,8 +1797,8 @@ unused
 					(CITE Butt 2021)
 				</section -->
 
-				<section>
-					<h2>Integrating community efforts</h2>
+				<!-- section>
+					<h2>Integrating community efforts</h2 -->
 					<!-- (CITE Moshagen &amp; Trosterud 2019)-->
 					<!-- ul class="shrink nobullet">
 						<li>Manifesto for Open Language Technology</li>
@@ -1610,7 +1809,7 @@ unused
 							<li><bbb>Accessible standards</bbb>: language-related international standards should be respected, fully implemented and implementations should be regularly updated</li>
 						</ul></em>
 					</ul-->
-					<div class="highlight-box">
+					<!-- div class="highlight-box">
 						<h4>The real challenges</h4>
 						<ul>
 							<li><span class="highlight">Localisation</span>: much software is not localisable independently of the producer of the software</li>
@@ -1625,10 +1824,10 @@ unused
 						<ul>
 							<li>Challenges can be overcome with effort</li>
 							<li>Sometimes corporations make positive change on their own</li>
-						</ul>
-				</section>
+						</ul -->
+				<!-- /section -->
 
-				<section>
+				<!-- section>
 					<h2>But does language technology actually help?</h2>
 
 					<p class="fragment">Maybe a little?</p>
@@ -1699,7 +1898,7 @@ unused
 							<li class="fragment highlight">Develop our own language technology?</li>
 						</ul>
 					</div>
-				</section>
+				</section -->
 
 				</section>
 

@@ -43,6 +43,9 @@ p.shrink {
 span.shrink {
 	font-size: 75% !important;
 }
+div.shrink {
+	font-size: 75% !important;
+}
 .regular {
 	font-weight: normal !important;
 }
@@ -892,6 +895,12 @@ li.arrow::before {
 	width: 40px !important;
 	margin-left: -40px !important;
 }
+li.X::before {
+	color: #e05b58;
+	content: "✘ ";
+	width: 40px !important;
+	margin-left: -40px !important;
+}
 
 ul.nobullet {
 	list-style-type: none !important;
@@ -990,7 +999,7 @@ ref {
 	color: #e05b58;
 }
 
-td ul {
+.ultbl tr td ul {
 	display: block;
 	margin: 0 !important;
 }
