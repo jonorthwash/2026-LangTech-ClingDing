@@ -232,9 +232,10 @@ table.supershrink tr th {
 	vertical-align: bottom ;
 }
 
-table.booktabs tr th {
+table.booktabs tr:first-child th {
 	border-top: 3pt solid white;
 	border-bottom: 2pt solid white !important;
+	margin-bottom: -2em !important;
 }
 
 table.booktabs {
@@ -980,4 +981,24 @@ ref {
 	background: rgba(255, 255, 255, 0.6) !important;
 	width: 0.9em;
 	color: black;
+}
+
+.fragment.strikethrough {
+}
+.fragment.strikethrough.visible {
+	text-decoration: line-through;
+	color: #e05b58;
+}
+
+td ul {
+	display: block;
+	margin: 0 !important;
+}
+
+.ultbl tr td {
+	padding: 0.05em 0.1em 0.05em 0.1em;
+}
+
+.ultbl tr td ul li {
+	line-height: 0.85;
 }

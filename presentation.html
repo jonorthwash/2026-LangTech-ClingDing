@@ -1162,26 +1162,60 @@ unused
 
 				<section data-auto-animate>
 					<h2>Morphological transducers</h2>
+	
+					<div class="highlight-box"><h4>“Downstream tasks” (uses):</h4>
+					<ul>
+						<li><span class="highlight">Spell checkers</span></li>
+						<li>Component of <span class="highlight">machine translation</span> (MT) systems</li>
+						<li>Computer-assisted <span class="highlight">language-learning</span> (CALL) <!-- e.g., Revita, <a href="https://revita.cs.helsinki.fi">revita.cs.helsinki.fi</a>) --></li>
+						<li>Script conversion</li>
+						<li>Other NLP tasks and research</li>
+						<li>Whatever else you can imagine</li>
+					</ul>
+					</div>
+				</section>
 
-					<div class="highlight-box"><h4>Development</h4>
+
+				<section data-auto-animate>
+					<h2>Morphological transducers</h2>
+
+					<div class="highlight-box">
+					<h4>Development</h4>
+					<ul class="nobullet" style="margin-left: 1.5em;">
+						<li class="plus">Advantages:</li>
+						<ul class="shrink">
+							<li>No requirement for giant corpora or powerful computers</li>
+							<li>More <span class="highlight">precise</span> than corpus-based tools <span class="citation">(Butt 2020)</span></li>
+							<li><span class="highlight">Easy</span> to fix errors and expand coverage</li>
+							<li>(In MT) lots of "free rides" for related languages</li>
+							<li>Support for multiple orthographies mostly <span class="highlight">trivial</span> <span class="citation">(Washington et al. 2020, Washington et al. 2021)</span></li>
+							<li>(Essentially) single development cycle <span class="citation">(Tyers et al. 2015, Butt 2020)</span></li>
+							<li>Only need knowledge of language, not mathematics and programming</li>
+						</ul>
+						<li class="minus">Disadvantages:</li>
+						<div class="fragment">
+						<ul class="shrink">
+							<li>...Need knowledge of language, not mathematics and programming</li>
+							<li>Takes time to develop (human time, not compute)</li>
+						</ul></div>
+						<div class="fragment">
+						<li class="arrow">i.e., good for <span class="highlight-cyan">community partnerships</span>:<!-- in principle --><!-- span class="highlight">community-maintainable</span --></li>
+						<ul class="shrink">
+							<li>Collaboration between different types of experts, as equals</li>
+							<li>Less prone to extractive &amp; other marginalising approaches</li>
+						</ul>
+						</div>
+					</ul>
+					</div>
+
+					<!-- div class="highlight-box"><h4>Development</h4>
 						<ul class="shrink">
 							<li>Technologically <span class="highlight">simple</span> to develop (finite-state)</li>
 							<li>ML produces much worse results <span class="citation">(Butt 2020)</span></li>
 							<li>Requires linguistic knowledge to develop</li>
 							<li>Ideal for <span class="highlight">collaborations</span> with communities</li>
 						</ul>
-					</div>
-
-					<div class="highlight-box"><h4>“Downstream tasks” (uses):</h4>
-					<ul class="shrink">
-						<li><span class="highlight">Spell checkers</span></li>
-						<li>Component of <span class="highlight">machine translation systems</span></li>
-						<li>Computer-assisted <span class="highlight">language-learning<span> (CALL) <!-- e.g., Revita, <a href="https://revita.cs.helsinki.fi">revita.cs.helsinki.fi</a>) --></li>
-						<li>Script conversion</li>
-						<li>Other NLP tasks and research</li>
-						<li>Whatever else you can imagine</li>
-					</ul>
-					</div>
+					</div -->
 				</section>
 
 				<section data-auto-animate>
@@ -1294,19 +1328,140 @@ unused
 
 				</section>
 
-				<section>
-				<section>
+				<section data-auto-animate>
 					<h2>Flipping the picture</h2>
 					<div class="highlight-box">
 						<h4>A different approach</h4>
 						<ul>
-							<li>Transducers → potential uses</li>
-							<li>Community needs → what can be done</li>
-							<li>Also consider: not all "low-resource" settings are the same <span class="citation">(Liu et al. 2022)</span></li>
+							<li data-fragment-index="1" class="fragment custom strikethrough">Transducers → potential uses</li>
+							<li data-fragment-index="1" class="fragment"><span class="highlight-green">Community needs → what can be done</span></li>
 						</ul>
 					</div>
 
+					<div class="highlight-box fragment">
+						<h4>Also important to consider</h4>
+						<p data-id="loresdiff"><span>not all "low-resource" settings are the same</span> <span class="citation">(Liu et al. 2022)</span></p>
 					<div>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="loresdiff"><span>not all "low-resource" settings are the same</span></h2>
+
+					<table data-id="lgtbl" class="shrink booktabs ultbl" style="width: 140%; margin: auto auto auto -20%;">
+						<tr>
+							<th></th>
+							<th></th>
+							<th>Speakers</th>
+							<th>Outside interest</th>
+							<th>Language Technology</th>
+							<th>Resource availability</th>
+							<th>Local expertise in Lg &amp; NLP</th>
+							<th class="fragment">Community priorities</th>
+						</tr>
+						<tr style="border-bottom: 2px solid grey;">
+							<th><span class="highlight">Language A</span> <span class="fragment">(350)</span></span></th>
+							<td>"small" national language</td>
+							<td>≥1M, &lt;10M </td>
+							<td>some big corporations</td>
+							<!-- td>Some seamless tools; growing localisation</td-->
+							<td>some seamless tools; increasing localisation</td>
+							<!-- td>Several large corpora</td -->
+							<td>large corpora</td>
+							<td>plenty</td>
+							<td class="fragment"><ul><li>voice assistants</li><li>screenreaders</li><li>updates to keyboards that everyone finds annoying</li></ul></td>
+						</tr>
+						<tr style="border-bottom: 2px solid grey;">
+							<th><span class="highlight">Language&nbsp;B</span> <span class="fragment">(1K)</span></span></th>
+							<td>"large" regional language</td>
+							<td>≥100K, &lt;1M</td>
+							<td>occasional corporate</td>
+							<!-- td>A number of tools; spotty localisation</td -->
+							<td>some tools; spotty localisation</td>
+							<!-- td>Spotty corpus coverage</td -->
+							<td>copora <span class="citation">(spotty)</span></td>
+							<td>some</td>
+							<td class="fragment"></td>
+						</tr>
+						<tr style="border-bottom: 2px solid grey;">
+							<th><span class="highlight">Language&nbsp;C</span> <span class="fragment">(3.8K)</span></th>
+							<td>"small" regional language</td>
+							<td>≥1K, &lt;100K, <span class="citation">increasingly few young</span></td>
+							<td>some academic</td>
+							<td>a couple local web-based tools</td>
+							<td>some published literature</td>
+							<td>some "activists", <span class="citation">mostly self-taught</span></td>
+							<td class="fragment"></td>
+						</tr>
+						<tr>
+							<th><span class="highlight">Language&nbsp;D</span> <span class="fragment">(764)</span></th>
+							<td>extremely "endangered" language</td>
+							<td>&lt;100 fluent L1, <span class="citation">mostly elders</span></td>
+							<td>some academic</td>
+							<td>none</td>
+							<td>some published texts, <span class="citation">mostly collected narratives</span></td>
+							<td>adult learners <span class="citation">(small community)</span></td>
+							<td class="fragment"></td>
+						</tr>
+					</table>
+
+					<!-- section>
+					<div class="float-left">
+						<div class="highlight-box">
+							<h4>Language A</h4>
+							<ul class="shrink">
+								<li>"Small" national language</li>
+								<li>1Ms of speakers</li>
+								<li>Recent attention from big corporations</li>
+								<li>Some seamless tools</li>
+								<li>Plenty of local specialists in Lg A &amp; NLP</li>
+								<li>Plenty of large corpora</li>
+								<li>Growing localisation</li>
+							</ul>
+						</div>
+
+						<div class="highlight-box">
+							<h4>Language B</h4>
+							<ul class="shrink">
+								<li>Large regional language, some national recognition</li>
+								<li>100Ks of speakers</li>
+								<li>Occasional corporate interest</li>
+								<li>A number of tools</li>
+								<li>Spotty corpus availability</li>
+								<li>Some local specialists in Lg B &amp; NLP</li>
+								<li>Spotty corpus availability</li>
+								<li>Growing localisation</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="float-right">
+						<div class="highlight-box">
+							<h4>Language C</h4>
+							<ul class="shrink">
+								<li>Small regional language</li>
+								<li>10Ks of speakers (but increasingly few are young)</li>
+								<li>Some oustide scholarly interest</li>
+								<li>Some activists who care about the language: a couple "in-house" language or NLP specialists, mostly self-taught</li>
+							</ul>
+						</div>
+
+						<div class="highlight-box">
+							<h4>Language D</h4>
+							<ul class="shrink">
+								<li></li>
+								<li>A few fluent L1 speakers, mostly elders</li>
+								<li>Some oustide scholarly interest</li>
+								<li>Small community of adult learners</li>
+								<li>Some published texts and other resources</li>
+							</ul>
+						</div>
+
+
+
+					<div>
+					</section -->
+
 <!--
 		  ignoring issues of orthography, standardisation, politics, etc. (all important!)
 						Language A: Non-European national language, millions of speakers, historically ignored but recent attention from big-corporation has resulted in seamless tools, plenty of "in-house" specialists in language and NLP, large corpora, growing localisation
@@ -1318,175 +1473,66 @@ unused
 					Lang B - priorities: seamless keyboard instead of app you have to install on everyone's phones, localisation, search engine support
 					Lang C - priorities: keyboards, localisation, spelling and grammar checking, MT (for quick media generation), 
 					Lang D - priorities: keyboards, CALL, anything that raises interest & awareness & helps produce new speakers
-
-
 -->
-</div>
-
-
 				</section>
 
-				<section>
-
-
-					<div class="highlight-box fragment">
-						<p>Develop symbolic language technology<br/>
-						in partnership with communities<br/>
-						leveraging existing resources and linguistics</p>
-					</div>
-				</section>
 				<section data-auto-animate>
-					<h2>Morphological transducers</h2>
-					<div class="highlight-box"><h4>Symbolic models (compared to corpus-based)</h4>
-					<ul class="nobullet" style="margin-left: 1.5em;">
-						<li class="plus">Advantages:</li>
-						<ul class="shrink">
-							<li>No requirement for giant corpora</li>
-							<li>No powerful computers required</li>
-							<li>More precise than corpus-based</li>
-							<li>Easy to fix errors and expand coverage</li>
-							<li>(In MT:) lots of "free rides" for related languages</li>
-							<li>Support for multiple orthographies ~trivial <refs>(<ref>Washington et al. 2020</ref>, <ref>Washington et al. 2021</ref>)</refs></li>
-							<li>(Essentially) single development cycle <refs>(<ref>Tyers et al. 2015</ref>, <ref>Butt 2020</ref>)</refs></li>
-							<li>Only need knowledge of language, not mathematics and programming</li>
-						</ul>
-						<li class="minus">Disadvantages:</li>
-						<ul class="shrink">
-							<li>...Need knowledge of language, not mathematics and programming</li>
-							<li>Takes time to develop (human time, not computing time)</li>
-						</ul>
-						<li class="arrow">i.e., good for <span class="highlight">community partnerships</span>:<!-- in principle --><!-- span class="highlight">community-maintainable</span --></li>
-						<ul class="shrink">
-							<li>Engagement between different types of experts, as equals</li>
-							<li>Less prone to extractive &amp; other marginalising approaches</li>
-						</ul>
-					</ul>
-					</div>
+					<h2 data-id="loresdiff"><span>not all "low-resource" settings are the same</span></h2>
+
+					<table data-id="lgtbl" class="shrink booktabs ultbl" style="width: 140%; margin: auto auto auto -20%">
+						<tr>
+							<th></th>
+							<th>Broad label</th>
+							<th>Speakers</th>
+							<th>Outside interest</th>
+							<th>Tools</th>
+							<th>Resource availability</th>
+							<th>Local expertise in Lg &amp; NLP</th>
+							<th>Community priorities</th>
+						</tr>
+						<tr style="border-bottom: 2px solid grey;">
+							<th class="highlight">Language A</th>
+							<td><p>"Small" national language</p></td>
+							<td><p>1Ms</p></td>
+							<td><p>some big corporations</p></td>
+							<td><p>Some seamless tools; growing localisation</p></td>
+							<td><p>large corpora</p></td>
+							<td><p>Plenty</p></td>
+							<td><ul style="display: block; margin: 0 !important;"><li>voice assistants</li><li>screenreaders</li><li>updates to keyboards that everyone finds annoying</li></ul></td>
+						</tr>
+						<tr style="border-bottom: 2px solid grey;">
+							<th class="highlight">Language B</th>
+							<td>"Large" regional language</td>
+							<td>100Ks</td>
+							<td>occasional corporate</td>
+							<td>A number of tools; spotty localisation</td>
+							<td>spotty corpora</td>
+							<td>Some</td>
+							<td><ul style="display: block; margin: 0 !important;"><li>seamless keyboard instead of app you have to install on everyone's phones</li><li>localisation</li><li>search engine support</li></ul></td>
+						</tr>
+						<tr style="border-bottom: 2px solid grey;">
+							<th class="highlight">Language C</th>
+							<td>"Small" regional language</td>
+							<td>1Ks-10Ks</td>
+							<td>academic</td>
+							<td>A couple local web-based tools</td>
+							<td>some texts etc.</td>
+							<td>Self-taught "activists"</td>
+							<td><ul style="display: block; margin: 0 !important;"><li>keyboards</li><li>localisation</li><li>spelling and grammar checking</li><li>MT (for quick media generation)</li></td>
+						</tr>
+						<tr>
+							<th class="highlight">Language D</th>
+							<td>Truly "endangered" language</td>
+							<td>10s, mostly elders</td>
+							<td>academic</td>
+							<td>None</td>
+							<td>few texts etc.</td>
+							<td>Adult learners</td>
+							<td><ul style="display: block; margin: 0 !important;"><li>keyboards</li><li>CALL</li><li>anything that raises interest & awareness & helps produce new speakers</li></td>
+						</tr>
+					</table>
 				</section>
 
-
-				<section>
-					<h2>How can we add support for missing languages?</h2>
-
-					<div class="highlight-box">
-						<h4>The short answer</h4>
-						<p>We can't.</p>
-					</div>
-					
-					<div class="highlight-box">
-						<h4>A slightly longer answer</h4>
-						<p>By convincing each company that each language will bring in more money than they will spend to add it.</p>
-						<p>(except it probably won't, and they know that)</p>
-					</div>
-
-					<p class="fragment">So what can we do?</p>
-
-				</section>
-
-				<section>
-					<h2>So what can we do?</h2>
-					<div class="highlight-box">
-						<h4>Some possibilities</h4>
-						<ul>
-							<li>(Re)submit proposals for ISO codes<br/>(Dukhan rejected, Iraqi Türkman rejected after pending for 4 years)</li>
-							<li>Contribute to CLDR and other open localisation efforts</li>
-							<li>…</li>
-							<li class="fragment highlight">Develop our own language technology?</li>
-						</ul>
-					</div>
-				</section>
-
-
-				</section>
-
-
-				<section>
-					<h2>Ling 073: Computational Linguistics</h2>
-					<ul style="margin-bottom: 1em">
-						<li>Taught almost every spring (currently 7th run)</li>
-						<li>~15-20 students each year</li>
-						<li>Prereq: CS or Ling background</li>
-						<li>Students usually work in pairs or small groups</li>
-						<li>Develop language technology for minoritised language of choice</li>
-						<li>Have to work with grammars, dictionaries, original texts—often very limited</li>
-						<li>Implement tools using a wide range of computational formalisms</li>
-
-					</ul>
-					<div class="highlight-box">
-						<!--
-							2017: 17t, 8t
-							2018: 8t, 5mt
-							2019: 5t, 5mt
-							2021: 9t, 9mt
-							2022: 8t, 8mt
-							2023: 10t, 10mt
-							2025: 9t, 8mt?
-							pre-2025 total: 57t, 45mt
-						-->
-						<!-- ul>
-							<li>pre-2025: transducers and MT systems for ~57 languages</li>
-							<li>2025: 10 more languages</li>
-						</ul -->
-							<p>transducers &amp; MT systems developed:</p>
-							<table class="booktabs">
-								<tr><th>2017-2023</th><th>2025 (in progress)</th></tr>
-								<tr><td>~57</td><td>10</td></tr>
-							</table>
-							<br/>
-
-					</div>
-				</section>
-
-				<section data-background-image="©img/Donetsk_in_Ukraine.svg" data-background-size="90%" data-background-opacity="0.2" data-auto-animate>
-					<h2>Urum</h2>
-					<div class="highlight-box">
-						<h4>Background</h4>
-						<ul>
-							<li>Turkic language spoken by ethnic Greeks</li>
-							<li>primarily spoken around Mariupol, Ukraine</li>
-							<li>Children have not been raised speaking the language</li>
-							<ul>
-								<li>2000: estimated 190k speakers <span class="citation">(Ethnologue 2015)</span></li>
-								<li>2023: estimated 1k speakers <span class="citation">(Ethnologue 2023)</span></li>
-							</ul>
-							<li>Currently:</li>
-							<ul>
-								<li>Increasing ethnic pride</li>
-								<li>Active interest in language</li>
-								<li>Engaged community of adult learners online</li>
-							</ul>
-						</ul>
-					</div>
-				</section>
-
-				<section data-background-image="©img/Donetsk_in_Ukraine.svg" data-background-size="90%" data-background-opacity="0.2" data-auto-animate>
-					<h2>Urum</h2>
-					<div class="highlight-box">
-						<h4>Spring 2023 work</h4>
-						<ul>
-							<li>Ling 073, in pair with Sasha Casada '24</li>
-							<li>Developed morphological transducer</li>
-							<li>Very limited resources to work from</li>
-							<li>Developed machine translation system to English</li>
-						</ul>
-					</div>
-				</section>
-
-				<section data-background-image="©img/Donetsk_in_Ukraine.svg" data-background-size="90%" data-background-opacity="0.2" data-auto-animate>
-					<h2>Urum</h2>
-					<div class="highlight-box">
-						<h4>Planned summer 2025 work</h4>
-						<ul>
-							<li>Plan to develop tools for community</li>
-							<li><span class="highlight">Web-based tools for revitalisation:</span> form and paradigm generators</li>
-							<li>For use as language learning materials</li>
-							<li>Based on Urum morphological transducer</li>
-							<li>Localised in Russian, Ukrainian</li>
-							<li>Hope to be in touch with community</li>
-						</ul>
-					</div>
-
-				</section>
 
 				<section>
 					<h2 class="extralarge">Concluding thoughts</h2>
@@ -1613,6 +1659,48 @@ unused
 						<p>find a need that you can contribute to and contribute</p>
 					</div>
 				</section>
+				<section>
+
+
+					<div class="highlight-box fragment">
+						<p>Develop symbolic language technology<br/>
+						in partnership with communities<br/>
+						leveraging existing resources and linguistics</p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>How can we add support for missing languages?</h2>
+
+					<div class="highlight-box">
+						<h4>The short answer</h4>
+						<p>We can't.</p>
+					</div>
+					
+					<div class="highlight-box">
+						<h4>A slightly longer answer</h4>
+						<p>By convincing each company that each language will bring in more money than they will spend to add it.</p>
+						<p>(except it probably won't, and they know that)</p>
+					</div>
+
+					<p class="fragment">So what can we do?</p>
+
+				</section>
+
+				<section>
+					<h2>So what can we do?</h2>
+					<div class="highlight-box">
+						<h4>Some possibilities</h4>
+						<ul>
+							<li>(Re)submit proposals for ISO codes<br/>(Dukhan rejected, Iraqi Türkman rejected after pending for 4 years)</li>
+							<li>Contribute to CLDR and other open localisation efforts</li>
+							<li>…</li>
+							<li class="fragment highlight">Develop our own language technology?</li>
+						</ul>
+					</div>
+				</section>
+
 				</section>
 
 			</div>
