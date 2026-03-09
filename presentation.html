@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Creating meaningful language technology for minoritised languages</title>
+		<title>Creating meaningful language technology without machine learning</title>
 
-		<meta name="description" content="Creating meaningful language technology for minoritised languages">
+		<meta name="description" content="Creating meaningful language technology without machine learning">
 		<meta name="author" content="Jonathan North Washington">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +37,9 @@
 
 	<!-- ABSTRACT
 
-	One type of challenge faced by speakers of minoritised and endangered languages in language maintenance and revitalisation efforts is the lack of support for the language on digital platforms.  Specific barriers range from not having the language recognised with an ISO 639 code to no support for personal voice assistants in the language, and everything in between (localisation, input methods, spell checking, machine translation, etc.).  Such tools are important because they add to the ease with which a language can be used in digital contexts, which has the potential to increase both the range of uses and the perceptions of the language, both of which are crucial for maintenance and revitalisation.  In this talk, we overview the current state of affairs regarding language technology, using Turkic languages as a case study.  We further present on work being done both in and out of the classroom right here at Swarthmore to support minoritised languages with language technology.
+For some tasks, symbolic tools, developed using minimal or no machine learning (ML), offer many advantages over ML tools. They can outperform ML-based tools, can be created using far less resource-intensive methods in far fewer development cycles, are suitable for situations where large corpora don't exist and would be infeasible to create, and offer an opportunity for less one-sided collaborations with members of communities where a language is used.
+
+This talk discusses the versatility of symbolic tools, why one might want to develop them, and how to actually do that. Some ways these tools can be used in meaningful language technology applications will also be showcased.
 
 	-->
 
@@ -58,7 +60,7 @@
 
 
 				<section id="title" data-state="no-toc-progress">
-					<h1>creating MEANINGFUL language technology for minoritised languages</h1>
+					<h1>creating meaningful language technology without machine learning</h1>
 
 					<div style="padding-top:1in; padding-bottom: 2in;">
 						<div><b>Jonathan N. Washington</b><br />
@@ -66,7 +68,7 @@
 					</div>
 
 					<div style="font-style: italic">
-						SPELLL conference, 2025-12-20
+						ClingDing, 2026-03-10
 					</div>
 
 					<div style="width: 98%; background: white; margin-left: auto; margin-right: auto; margin-top: 1em; margin-bottom: 1em;">
@@ -81,27 +83,37 @@
 					<div class="float-left">
 						<div class="box">
 							<p class="bbb">My talk in a nutshell</p>
-							<p>Will overview reasons and steps to make <span class="highlight">language technology</span> <span class="highlight-cyan">meaningful</span>.</p>
+							<p>Will overview how to develop <span class="highlight">meaningful language technology</span> by developing <span class="highlight-cyan">symbolic tools</span>.</p>
 						</div>
 					</div>
 					<div class="float-right">
 						<div class="box">
 							<p class="bbb">The next ~42 minutes:</p>
 							<ul>
-								<li>Language vitality</li>
+								<li>Meaningful language technology</li>
 								<!-- ul class="shrink">
-									<li>Turkic languages</li>
-									<li>Countering loss</li>
+									<li>What NLP do we work on?</li>
+									<li>How do people experience language technology?</li>
+									<li>Why language technology matters</li> / <li>The relationship between LT and vitality</li>
+									<li>What is needed in low-resource settings?</li>
+									<li>Not all low-resource settings are the same</li>
 								</ul -->
-								<li>Language technology (LT)</li>
+								<li>Symbolic language technology (LT)</li>
 								<!-- ul class="shrink">
-									<li>What is LT?</li>
-									<li>Why LT is important?</li>
+									<li>Transducers</li>
+									<li>advantages, uses, how they work</li>
+									<li>→ Privileging local agency</li>
+									<li>Example: Turkic languages</li>
 								</ul -->
-								<li>The relationship between LT and vitality</li>
-								<li>Example: Turkic languages</li>
-								<li>Privileging local agency</li>
-								<li>Different types of "low-resource" setting</li>
+								<li>Getting started</li>
+								<!-- ul class="shrink">
+									<li>lexd + twol via Apertium + HFST</li>
+									<li>coding it up</li>
+								</ul -->
+								<!-- li>The relationship between LT and vitality</li -->
+								<!-- li>Example: Turkic languages</li -->
+								<!-- li>Privileging local agency</li -->
+								<!-- li>Different types of "low-resource" setting</li -->
 								<li>Concluding thoughts</li>
 							</ul>
 						</div>
