@@ -106,7 +106,7 @@ This talk discusses the versatility of symbolic tools, why one might want to dev
 								</ul -->
 								<li>Getting started</li>
 								<!-- ul class="shrink">
-									<li>lexd + twol via Apertium + HFST</li>
+									<li>lexd + twol viaApertium + HFST</li>
 									<li>coding it up</li>
 								</ul -->
 								<!-- li>The relationship between LT and vitality</li -->
@@ -151,7 +151,7 @@ General outline:
 					<div class="float-right">
 						<div class="highlight-box fragment">
 							<h4>How we experience them</h4>
-							<img src="./img/apertium-kir.gif"/>
+							<img src="./img/apertium-kir.gif" style="margin-top: 0em"/>
 						</div>
 					</div>
 				</section>
@@ -208,10 +208,10 @@ General outline:
 							<li>search engines</li>
 						</ul -->
 					<!-- /div-->
-					<div class="float-right fragment" style="position: absolute; right: -35%; top: 10%; width: 40% !important;">
+					<div class="float-right fragment" style="position: absolute; right: -27.5%; top: 10%; width: 32.5% !important;">
 						<div class="box">
 							<p class="bbb">Key:</p>
-							<ol>
+							<ol class="shrink">
 								<li>Input methods<br/>
 									predictive text</li>
 								<li>Machine translation</li>
@@ -229,12 +229,6 @@ General outline:
 	
 				</section>
 
-				<section>
-					<h2>Reframing NLP</h2>
-					<ul>
-						<li>NLP → Language technology</li>
-					</ul>
-				</section>
 
 				<!-- section>
 					<h2>Language vitality</h2>
@@ -423,6 +417,417 @@ unused
 						</ul>
 					</div -->
 				</section>
+
+				<section>
+					<h2>Reframing NLP</h2>
+					<div class="highlight-box float-left">
+						<h4>Q: Does this support language vitality?</h4>
+							<img src="./img/apertium-kir.gif" class="fragment fade-out" data-fragment-index="3" style="margin-top: 0em"/>
+					</div>
+					<div class="highlight-box float-right fragment" data-fragment-index="1">
+						<p class="highlight">A: not directly</p>
+					</div>
+
+					<div class="highlight-box float-right fragment" data-fragment-index="2">
+						<h4>Meaningful language technology</h4>
+						<ul>
+							<li><span class="highlight">Community-oriented</span> terminology</li>
+							<ul class="shrink">
+								<li>NLP → Language technology (LT)</li>
+								<li>"low-resource" → meaningful in low-vitality situations</li>
+							</ul>
+							<li><span class="highlight">Evaluation</span></li>
+							<ul class="shrink">
+								<li>should include (potential) usefulness</li>
+								<li>corporate NLP has this part this right</li>
+							</ul>
+							<!-- li><span class="highlight">Result</span> should be meaningful</li -->
+							<li><span class="highlight">Motivation</span>: how can LT
+							<ul class="shrink">
+								<li>empower communities</li>
+								<li>promote linguistic vitality</li>
+							</ul>
+						</ul>
+					</div>
+
+					<div class="highlight-box float-right fragment" data-fragment-index="4">
+						<p class="highlight">What's meaningful<br/>in low-vitality situations?</p>
+					</div>
+
+				</section>
+
+				<section data-auto-animate>
+					<h2>What's meaningful in low-vitality situations?</h2>
+					<div class="highlight-box"/>
+						<p>not all low-vitality situations are the same <span class="citation">(Liu et al. 2022)</p>
+					</div>
+
+					<table data-id="lgtbl" class="shrink booktabs ultbl" style="width: 140%; margin: auto auto auto -20%;">
+						<tr>
+							<th></th>
+							<th></th>
+							<th>Speakers</th>
+							<th>Outside interest</th>
+							<th>Language Technology</th>
+							<th>Resource availability</th>
+							<th>Local expertise in Lg &amp; NLP</th>
+							<th class="fragment" data-fragment-index="2">Community priorities</th>
+						</tr>
+						<tr style="border-bottom: 2px solid grey;" class="fragment" data-fragment-index="1">
+							<th><span class="highlight fragment" data-fragment-index="1">Language A</span> <span class="fragment" data-fragment-index="4">(350)</span></span></th>
+							<td>"small" national language</td>
+							<td>≥1M, &lt;10M </td>
+							<td>some big corporations</td>
+							<!-- td>Some seamless tools; growing localisation</td-->
+							<td>some seamless tools; increasing localisation</td>
+							<!-- td>Several large corpora</td -->
+							<td>large corpora</td>
+							<td>plenty</td>
+							<td class="fragment" data-fragment-index="3"><ul><li>voice assistants</li><li>screen readers</li><li>updates to keyboards that everyone finds annoying</li></ul></td>
+						</tr>
+						<tr style="border-bottom: 2px solid grey;" class="fragment" data-fragment-index="5">
+							<th><span class="highlight">Language&nbsp;B</span> <span class="fragment" data-fragment-index="7">(1K)</span></span></th>
+							<td>"large" regional language</td>
+							<td>≥100K, &lt;1M</td>
+							<td>occasional corporate</td>
+							<!-- td>A number of tools; spotty localisation</td -->
+							<td>some tools; spotty localisation</td>
+							<!-- td>Spotty corpus coverage</td -->
+							<td>copora <span class="citation">(spotty)</span></td>
+							<td>some</td>
+							<td class="fragment" data-fragment-index="6"><ul><li>seamless keyboard instead of stand-alone app</li><li>localisation</li><li>search engine support</li></ul></td>
+						</tr>
+						<tr style="border-bottom: 2px solid grey;" class="fragment" data-fragment-index="8">
+							<th><span class="highlight">Language&nbsp;C</span> <span class="fragment" data-fragment-index="10">(3.8K)</span></th>
+							<td>"small" regional language</td>
+							<td>≥1K, &lt;100K, <span class="citation">increasingly few young</span></td>
+							<td>some academic</td>
+							<td>a couple local web-based tools</td>
+							<td>some published literature</td>
+							<td>some "activists", <span class="citation">mostly self-taught</span></td>
+							<td class="fragment" data-fragment-index="9"><ul><li>pred. text keyboards</li><li>localisation</li><li>spelling and grammar checking</li><li>MT (for quick media generation)</li></ul></td>
+						</tr>
+						<tr class="fragment" data-fragment-index="11">
+							<th><span class="highlight">Language&nbsp;D</span> <span class="fragment" data-fragment-index="13">(764)</span></th>
+							<td>extremely "endangered" language</td>
+							<td>&lt;100 fluent L1, <span class="citation">mostly elders</span></td>
+							<td>some academic</td>
+							<td>none</td>
+							<td>some published texts, <span class="citation">mostly collected narratives</span></td>
+							<td>adult learners <span class="citation">(small community)</span></td>
+							<td class="fragment" data-fragment-index="12"><ul><li>simple keyboards</li><li>CALL</li><li>anything that raises interest &amp; awareness &amp; helps produce new speakers</li></ul></td>
+						</tr>
+					</table>
+
+					<!-- section>
+					<div class="float-left">
+						<div class="highlight-box">
+							<h4>Language A</h4>
+							<ul class="shrink">
+								<li>"Small" national language</li>
+								<li>1Ms of speakers</li>
+								<li>Recent attention from big corporations</li>
+								<li>Some seamless tools</li>
+								<li>Plenty of local specialists in Lg A &amp; NLP</li>
+								<li>Plenty of large corpora</li>
+								<li>Growing localisation</li>
+							</ul>
+						</div>
+
+						<div class="highlight-box">
+							<h4>Language B</h4>
+							<ul class="shrink">
+								<li>Large regional language, some national recognition</li>
+								<li>100Ks of speakers</li>
+								<li>Occasional corporate interest</li>
+								<li>A number of tools</li>
+								<li>Spotty corpus availability</li>
+								<li>Some local specialists in Lg B &amp; NLP</li>
+								<li>Spotty corpus availability</li>
+								<li>Growing localisation</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="float-right">
+						<div class="highlight-box">
+							<h4>Language C</h4>
+							<ul class="shrink">
+								<li>Small regional language</li>
+								<li>10Ks of speakers (but increasingly few are young)</li>
+								<li>Some oustide scholarly interest</li>
+								<li>Some activists who care about the language: a couple "in-house" language or NLP specialists, mostly self-taught</li>
+							</ul>
+						</div>
+
+						<div class="highlight-box">
+							<h4>Language D</h4>
+							<ul class="shrink">
+								<li></li>
+								<li>A few fluent L1 speakers, mostly elders</li>
+								<li>Some oustide scholarly interest</li>
+								<li>Small community of adult learners</li>
+								<li>Some published texts and other resources</li>
+							</ul>
+						</div>
+
+
+
+					<div>
+					</section -->
+
+<!--
+		  ignoring issues of orthography, standardisation, politics, etc. (all important!)
+						Language A: Non-European national language, millions of speakers, historically ignored but recent attention from big-corporation has resulted in seamless tools, plenty of "in-house" specialists in language and NLP, large corpora, growing localisation
+						Language B: Large regional language, hundreds of thousands of speakers, occasional corporate interest, spotty corpus availability, small number of "in-house" language & NLP specialists, localisation spotty
+						Language C: Small regional language, (tens of) thousands of speakers but increasingly fewer young ones, some outside scholarly interest, some activists who care about the language: a couple "in-house" language or NLP specialists, although mostly self-taught
+						Language D: Only a few fluent L1 speakers, mostly elders; some outside scholarly interest; small community of adult learners; some published texts and other resources
+
+					Lang A - priorities: voice assistants, screenreaders, updates to keyboards that everyone finds annoying,
+					Lang B - priorities: seamless keyboard instead of app you have to install on everyone's phones, localisation, search engine support
+					Lang C - priorities: keyboards, localisation, spelling and grammar checking, MT (for quick media generation), 
+					Lang D - priorities: keyboards, CALL, anything that raises interest & awareness & helps produce new speakers
+-->
+				</section>
+
+
+				<section>
+					<h2>Symbolic methods</h2>
+					<div class="highlight-box">
+						<h4>Symbolic tools</h4>
+						<ul>
+							<li>No (or minimal) machine learning (ML)</li>
+							<ul class="shrink">
+								<li>Requires <span class="highlight">no large corpora</span></li>
+								<li>Can be done <span class="highlight">low-budget</span>, with no special equipment</li>
+								<li>(Essentially) <span class="highlight">single development cycle</span> <span class="citation">(Butt 2020)</span></li>
+							</ul>
+							<li>Leverage linguistic knowledge</li>
+							<ul class="shrink">
+								<li>Good for <span class="highlight">partnerships/collaborations</span> with communities</li>
+							</ul>
+							<li>Outcomes</li>
+							<ul class="shrink">
+								<li>Practical?</li>
+								<li>Meaningful?</li>
+							</ul>
+						</ul>
+					</div>
+				</section>
+
+
+				<section data-auto-animate>
+					<h2>Morphological transducers</h2>
+					<div class="highlight-box"><h4>Example:<lg>eng</lg></h4>
+					<table class="nolines shrink">
+						<tr><th style="align: right; !important;">Input / Output:</th><td><b style="font-size: 125% !important">isn't</b></td>
+						<tr><th><!-- span class="highlight-green">↕</span --></th><td><span class="highlight-green large center" style="margin-left: 1.5em; text-align: center !important; font-weight: bold;">↕</span></td></tr>
+						<tr><th style="vertical-align: top !important; align: right;">Output / Input:</th><td>
+					be<tag>verb</tag><tag>pres</tag><tag>p3</tag><tag>sg</tag>+not<tag>adv</tag>
+						</td></tr>
+					</table>
+					</div>
+					<div class="highlight-box fragment"><h4>Example:<lg>kaz</lg></h4>
+					<table class="nolines shrink">
+						<tr><th style="align: right; !important;">Input / Output:</th><td><b style="font-size: 125% !important">Алмасы</b></td>
+						<tr><th><!-- span class="highlight-green">↕</span --></th><td><span class="highlight-green large center" style="margin-left: 1.5em; text-align: center !important; font-weight: bold;">↕</span></td></tr>
+						<tr><th style="vertical-align: top !important; align: right;">Output / Input:</th><td>
+					<!-- алма<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					Алмас<tag>np</tag><tag>ant</tag><tag>m</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					Алмас<tag>np</tag><tag>ant</tag><tag>m</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					Алмас<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					Алмас<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					алмас<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					алмас<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					Алма<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					Алма<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					алма<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					-->
+					алма<tag>n</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					алмас<tag>n</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					Алма<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					Алмас<tag>np</tag><tag>ant</tag><tag>m</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					<!-- Алмас<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag> -->
+					ал<tag>v</tag><tag>tv</tag><tag>neg</tag><tag>gpr_fut</tag><tag>subst</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					ал<tag>vaux</tag><tag>neg</tag><tag>gpr_fut</tag><tag>subst</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					ал<tag>v</tag><tag>tv</tag><tag>neg</tag><tag>ger_fut</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					ал<tag>vaux</tag><tag>neg</tag><tag>ger_fut</tag><tag>px3sp</tag><tag>nom</tag>
+						</td></tr>
+					</table>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Morphological transducers</h2>
+	
+					<div class="highlight-box"><h4>“Downstream tasks” (uses):</h4>
+					<ul>
+						<li><span class="highlight">Spell checkers</span></li>
+						<li>Component of <span class="highlight">machine translation</span> (MT) systems</li>
+						<li>Computer-assisted <span class="highlight">language-learning</span> (CALL) <!-- e.g., Revita, <a href="https://revita.cs.helsinki.fi">revita.cs.helsinki.fi</a>) --></li>
+						<li>Script conversion</li>
+						<li>Other NLP tasks and research</li>
+						<li>Whatever else you can imagine</li>
+					</ul>
+					</div>
+				</section>
+
+
+				<section data-auto-animate>
+					<h2>Morphological transducers</h2>
+
+					<div class="highlight-box">
+					<h4>Development</h4>
+					<ul class="nobullet" style="margin-left: 1.5em;">
+						<li class="plus">Advantages:</li>
+						<ul class="shrink">
+							<li>No requirement for giant corpora or powerful computers</li>
+							<li>More <span class="highlight">precise</span> than corpus-based tools <span class="citation">(Butt 2020)</span></li>
+							<li><span class="highlight">Easy</span> to fix errors and expand coverage</li>
+							<li>(In MT) lots of "free rides" for related languages</li>
+							<li>Support for multiple orthographies mostly <span class="highlight">trivial</span> <span class="citation">(Washington et al. 2020, Washington et al. 2021)</span></li>
+							<li>(Essentially) single development cycle <span class="citation">(Tyers et al. 2015, Butt 2020)</span></li>
+							<li>Only need knowledge of language, not mathematics and programming</li>
+						</ul>
+						<li class="minus">Disadvantages:</li>
+						<div class="fragment">
+						<ul class="shrink">
+							<li>...Need knowledge of language, not mathematics and programming</li>
+							<li>Takes time to develop (human time, not compute)</li>
+						</ul></div>
+						<div class="fragment">
+						<li class="arrow">i.e., good for <span class="highlight-cyan">community partnerships</span>:<!-- in principle --><!-- span class="highlight">community-maintainable</span --></li>
+						<ul class="shrink">
+							<li>Collaboration between different types of experts, as equals</li>
+							<li>Less prone to extractive &amp; other marginalising approaches</li>
+						</ul>
+						</div>
+					</ul>
+					</div>
+
+					<!-- div class="highlight-box"><h4>Development</h4>
+						<ul class="shrink">
+							<li>Technologically <span class="highlight">simple</span> to develop (finite-state)</li>
+							<li>ML produces much worse results <span class="citation">(Butt 2020)</span></li>
+							<li>Requires linguistic knowledge to develop</li>
+							<li>Ideal for <span class="highlight">collaborations</span> with communities</li>
+						</ul>
+					</div -->
+				</section>
+
+				<section data-auto-animate>
+					<h2>Case study: Turkic morphological transducers</h2>
+					<p>Turkic transducers I've contributed to<br/>
+					by naïve coverage &amp; lexicon size + distribution</p>
+					<div style="text-align: center"><!--  style="margin-top: -6.1em"  -->
+						<div style="width: 32%; float:left; margin-right: 1%">
+							<img src="img/lgs1.svg" style="display: block; margin-left: auto; margin-right: auto;"/>
+							<span class="highlight-green">Production-level</span><br/>92%-98% coverage<br/>
+							<span style="font-size: 60%">(<bbb>Tatar</bbb>, <bbb>Sakha</bbb>, <bbb>Kazakh</bbb>, <bbb>Turkish</bbb>, <bbb>Kyrgyz</bbb>, <bbb>Crimean Tatar</bbb>, <bbb>Tuvan</bbb>)</span>
+						</div>
+						<div style="width: 35%; float:left; margin-right: 1%">
+							<img src="img/lgs2.svg" style="display: block; margin-left: auto; margin-right: auto;"/>
+							<span class="highlight">Working</span><br/>88-93% coverage<br/>
+							<span style="font-size: 60%">(Chuvash, <bbb class="maybe">Uzbek</bbb>, <bbb>Bashqort</bbb>, <bbb class="maybe">Qaraqalpaq</bbb>, <bbb class="maybe">Uyghur</bbb>, Karachay-Balkar, <span class="faded"><bbb>Gagauz</bbb></span>, <bbb>Kumyk</bbb>)</span>
+						</div>
+						<div style="width: 30%; float:left;">
+							<img src="img/lgs3.svg" style="display: block; margin-left: auto; margin-right: auto;"/>
+							<span class="highlight-red">Prototype</span><br/>&lt;80% coverage<br />
+							<span style="font-size: 60%">(<span class="faded">Azerbaycani</span>, Iraqi Türkman, <bbb class="faded maybe">Turkmen</bbb>, Noghay, Khakas, Urum, Altay, <span class="faded">Ottoman</span>)</span>
+						</div>
+						<div class="small">key: <span class="faded">not directly involved in</span>, <bbb>published</bbb></div>
+					</div>
+
+					<span class="large">(</span><div style="display: inline-block; width: 95%; margin-top: 0.75em">
+						<refs>
+							<ref class="highlight-cyan">Washington et al. (2012)</ref><!-- kir -->,
+							<ref class="highlight-cyan">Tyers et al. (2012)</ref><!-- tat, bak (tat-bak) -->,
+							<ref class="highlight-cyan">Salimzyanov et al. (2013)</ref><!-- kaz (kaz-tat)-->,
+							<ref class="highlight-cyan">Washington et al. (2014)</ref><!-- kaz, kum, tat -->,
+							<ref class="highlight-cyan">Tyers et al. (2016)</ref><!-- tyv -->,
+							<ref class="highlight-cyan">Washington et al. (2016)</ref><!-- tyv -->,
+							<ref class="highlight-cyan">Bayatlı et al. (2018)</ref><!-- tur (kaz-tur) -->,
+							<ref class="highlight-cyan">Tyers et al. (2019)</ref><!-- crh -->,
+							<ref class="highlight-cyan">Gökırmak et al. (2019)</ref><!-- crh, tur (crh-tur) -->,
+							<ref class="highlight-cyan">Washington et al. (2019)</ref><!-- all -->,
+							<ref class="highlight-cyan">Washington et al. (2020)</ref><!-- crh, kaz, kir, kaa, tuk, uig, uzb -->,
+							<ref class="highlight-cyan">Ivanova et al. (2021, 2022)</ref><!-- sah -->
+						</refs>
+					</div><span class="large">)</span>
+				</section>
+
+
+				<section data-auto-animate>
+					<h2>Case study: Turkic morphological transducers</h2>
+					<p>Transducers I've contributed to: <span class="highlight">downstream tasks</span></p>
+					<div class="float-left">
+					<div class="highlight-box"><h4>Kazakh</h4>
+						<ul class="shrink">
+							<li>Used in other NLP research in Kazakhstan</li>
+							<li>Used as segmenter in a shared task</li>
+							<li>Spell checker for Word &amp; LibreOffice</li>
+							<li>Verb paradigm generator</li>
+						</ul>
+					</div><div class="highlight-box"><h4>Tatar</h4>
+						<ul class="shrink">
+							<li>Used to annotate Tatar National Corpus</li>
+							<li>Spell checker for Word &amp; LibreOffice</li>
+						</ul>
+					</div><div class="highlight-box"><h4>Uyghur</h4>
+						<ul class="shrink">
+							<li>Used in corpus-based phonology research</li>
+						</ul>
+					</div></div>
+					<div class="float-right">
+					<div class="highlight-box"><h4>Tuvan</h4>
+						<ul class="shrink">
+							<li>Used for UniMorph shared task (2021)</li>
+							<li>Spell checker for Word &amp; LibreOffice</li>
+						</ul>
+					</div><div class="highlight-box"><h4>Sakha</h4>
+						<ul class="shrink">
+							<li>Used in Revita (CALL)</li>
+							<li>Used for UniMorph shared task (2021)</li>
+						</ul>
+					</div><div class="highlight-box"><h4>Kyrgyz</h4>
+						<ul class="shrink">
+							<li>Spell checker for Word &amp; LibreOffice</li>
+							<li>Used for annotating published corpora</li>
+						</ul>
+					</div>
+					</div>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Case study: Turkic morphological transducers</h2>
+					<div class="highlight-box"><h4><span class="highlight">Downstream tasks</span> with potential uses by communities</h4>
+						<ul>
+							<li>Spell checkers</li>
+							<ul class="shrink">
+								<li><span class="highlight-green">Solutions</span> for integration with some environments <span class="citation">(Word, LibreOffice)</span></li>
+								<li><span class="highlight">Hard</span> to add at OS level <span class="citation">(Windows, macOS, iOS, Android, ChromeOS)</span></li>
+								<li><span class="highlight-red">Nigh impossible</span> to integrate seamlessly in cloud platforms <span class="citation">(Google Docs, MS Office 365)</span></li>
+							</ul>
+							<li>Computer-aided language learning (CALL)</li>
+							<ul class="shrink">
+								<li>Paradigm generators <span class="citation">(Apertium Paradigmatrix)</span></li>
+								<li>Morphological dictionaries <span class="citation">(Morphodict, Apertium Dictionary Mode)</span></li>
+								<li>Text-reading support <span class="citation">(Revita, Geriaoueg)</span></li>
+							</ul>
+							<li>Machine Translation <span class="citation">(Apertium, Giellatekno)</span>
+							<ul class="shrink">
+								<li>For saving limited translator/editor time when generating content speakers interact with</li>
+								<li>Available as stand-alone websites and local services</li>
+								<li>Possible to integrate into some word processors, browsers</li>
+							</ul>
+						</ul>
+					</div>
+
+				</section>
+
+
+
 
 				<section>
 					<section data-background-image="©img/The-distribution-of-the-Turkic-languages-Abbreviations-for-languages-are-explained-in.png" data-background-size="110%" data-background-opacity="0.25">
@@ -1158,12 +1563,12 @@ unused
 					</div>
 				</section>
 
-				<section data-auto-animate>
+				<!-- section data-auto-animate>
 					<h2>Morphological transducers</h2>
 					<div class="highlight-box"><h4>Example:<lg>eng</lg></h4>
 					<table class="nolines shrink">
 						<tr><th style="align: right; !important;">Input / Output:</th><td><b style="font-size: 125% !important">isn't</b></td>
-						<tr><th><!-- span class="highlight-green">↕</span --></th><td><span class="highlight-green large center" style="margin-left: 1.5em; text-align: center !important; font-weight: bold;">↕</span></td></tr>
+						<tr><th></th><td><span class="highlight-green large center" style="margin-left: 1.5em; text-align: center !important; font-weight: bold;">↕</span></td></tr>
 						<tr><th style="vertical-align: top !important; align: right;">Output / Input:</th><td>
 					be<tag>verb</tag><tag>pres</tag><tag>p3</tag><tag>sg</tag>+not<tag>adv</tag>
 						</td></tr>
@@ -1172,24 +1577,13 @@ unused
 					<div class="highlight-box fragment"><h4>Example:<lg>kaz</lg></h4>
 					<table class="nolines shrink">
 						<tr><th style="align: right; !important;">Input / Output:</th><td><b style="font-size: 125% !important">Алмасы</b></td>
-						<tr><th><!-- span class="highlight-green">↕</span --></th><td><span class="highlight-green large center" style="margin-left: 1.5em; text-align: center !important; font-weight: bold;">↕</span></td></tr>
+						<tr><th></th><td><span class="highlight-green large center" style="margin-left: 1.5em; text-align: center !important; font-weight: bold;">↕</span></td></tr>
 						<tr><th style="vertical-align: top !important; align: right;">Output / Input:</th><td>
-					<!-- алма<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
-					Алмас<tag>np</tag><tag>ant</tag><tag>m</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
-					Алмас<tag>np</tag><tag>ant</tag><tag>m</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
-					Алмас<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
-					Алмас<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
-					алмас<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
-					алмас<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
-					Алма<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
-					Алма<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
-					алма<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
-					-->
+					
 					алма<tag>n</tag><tag>px3sp</tag><tag>nom</tag><br/>
 					алмас<tag>n</tag><tag>px3sp</tag><tag>nom</tag><br/>
 					Алма<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag><br/>
 					Алмас<tag>np</tag><tag>ant</tag><tag>m</tag><tag>px3sp</tag><tag>nom</tag><br/>
-					<!-- Алмас<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag> -->
 					ал<tag>v</tag><tag>tv</tag><tag>neg</tag><tag>gpr_fut</tag><tag>subst</tag><tag>px3sp</tag><tag>nom</tag><br/>
 					ал<tag>vaux</tag><tag>neg</tag><tag>gpr_fut</tag><tag>subst</tag><tag>px3sp</tag><tag>nom</tag><br/>
 					ал<tag>v</tag><tag>tv</tag><tag>neg</tag><tag>ger_fut</tag><tag>px3sp</tag><tag>nom</tag><br/>
@@ -1206,7 +1600,7 @@ unused
 					<ul>
 						<li><span class="highlight">Spell checkers</span></li>
 						<li>Component of <span class="highlight">machine translation</span> (MT) systems</li>
-						<li>Computer-assisted <span class="highlight">language-learning</span> (CALL) <!-- e.g., Revita, <a href="https://revita.cs.helsinki.fi">revita.cs.helsinki.fi</a>) --></li>
+						<li>Computer-assisted <span class="highlight">language-learning</span> (CALL) </li>
 						<li>Script conversion</li>
 						<li>Other NLP tasks and research</li>
 						<li>Whatever else you can imagine</li>
@@ -1238,14 +1632,14 @@ unused
 							<li>Takes time to develop (human time, not compute)</li>
 						</ul></div>
 						<div class="fragment">
-						<li class="arrow">i.e., good for <span class="highlight-cyan">community partnerships</span>:<!-- in principle --><!-- span class="highlight">community-maintainable</span --></li>
+						<li class="arrow">i.e., good for <span class="highlight-cyan">community partnerships</span></li>
 						<ul class="shrink">
 							<li>Collaboration between different types of experts, as equals</li>
 							<li>Less prone to extractive &amp; other marginalising approaches</li>
 						</ul>
 						</div>
 					</ul>
-					</div>
+					</div -->
 
 					<!-- div class="highlight-box"><h4>Development</h4>
 						<ul class="shrink">
@@ -1367,7 +1761,7 @@ unused
 
 				</section>
 
-				<section data-auto-animate>
+				<!-- section data-auto-animate>
 					<h2>Flipping the picture</h2>
 					<div class="highlight-box">
 						<h4>A different approach</h4>
@@ -1381,9 +1775,9 @@ unused
 						<h4>Also important to consider</h4>
 						<p data-id="loresdiff"><span>not all "low-resource" settings are the same</span> <span class="citation">(Liu et al. 2022)</span></p>
 					<div>
-				</section>
+				</section -->
 
-				<section data-auto-animate>
+				<!-- section data-auto-animate>
 					<h2 data-id="loresdiff"><span>not all "low-resource" settings are the same</span></h2>
 
 					<table data-id="lgtbl" class="shrink booktabs ultbl" style="width: 140%; margin: auto auto auto -20%;">
@@ -1402,9 +1796,7 @@ unused
 							<td>"small" national language</td>
 							<td>≥1M, &lt;10M </td>
 							<td>some big corporations</td>
-							<!-- td>Some seamless tools; growing localisation</td-->
 							<td>some seamless tools; increasing localisation</td>
-							<!-- td>Several large corpora</td -->
 							<td>large corpora</td>
 							<td>plenty</td>
 							<td class="fragment" data-fragment-index="7"><ul><li>voice assistants</li><li>screen readers</li><li>updates to keyboards that everyone finds annoying</li></ul></td>
@@ -1414,9 +1806,7 @@ unused
 							<td>"large" regional language</td>
 							<td>≥100K, &lt;1M</td>
 							<td>occasional corporate</td>
-							<!-- td>A number of tools; spotty localisation</td -->
 							<td>some tools; spotty localisation</td>
-							<!-- td>Spotty corpus coverage</td -->
 							<td>copora <span class="citation">(spotty)</span></td>
 							<td>some</td>
 							<td class="fragment" data-fragment-index="7"><ul><li>seamless keyboard instead of stand-alone app</li><li>localisation</li><li>search engine support</li></ul></td>
@@ -1441,7 +1831,7 @@ unused
 							<td>adult learners <span class="citation">(small community)</span></td>
 							<td class="fragment" data-fragment-index="7"><ul><li>simple keyboards</li><li>CALL</li><li>anything that raises interest &amp; awareness &amp; helps produce new speakers</li></ul></td>
 						</tr>
-					</table>
+					</table -->
 
 					<!-- section>
 					<div class="float-left">
@@ -1513,7 +1903,7 @@ unused
 					Lang C - priorities: keyboards, localisation, spelling and grammar checking, MT (for quick media generation), 
 					Lang D - priorities: keyboards, CALL, anything that raises interest & awareness & helps produce new speakers
 -->
-				</section>
+				<!-- /section -->
 
 				<!-- section data-auto-animate>
 					<h2 data-id="loresdiff"><span>not all "low-resource" settings are the same</span></h2>
