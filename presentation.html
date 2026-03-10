@@ -52,14 +52,6 @@ This talk discusses the versatility of symbolic tools, why one might want to dev
 					<p><em style="font-size: 140%">"We live during a brief period of overlap between the mass extinction of the world’s languages and the advent of the digital age."</em></p>
 					<p class="float-right">- Steven Bird, 2009</p>
 				</section -->
-				<section data-state="no-toc-progress">
-				</section>
-
-				<section data-state="no-toc-progress">
-					<p><span style="font-size: 140%" class="highlight-red">Yukwe ènta kishkwik Lënapehòkink kpëmëtunhalelhumo.  Kenahkituneyo Lënapeyòk yu hàki òk Lënapei Sipu lòmëwe nòchi, yukwe, òk apchich.  Wëlilìsitàm tìlìch këmaxinkwelëmanëneyo Lënapeyunkahke, òk Lënapeyòk ahpihtit yukwe òk alàpa.</span></p>
-					<p>(I am speaking to you today from Lenapehoking, land of the Lenape.  We recognise the Lenape as past, present, and future stewards of this land and the Delaware River.  Let us honor through our actions the Lenape who were, those who are, and those who will be.)</p>
-				</section>
-
 
 				<section id="title" data-state="no-toc-progress">
 					<h1>creating meaningful language technology without machine learning</h1>
@@ -78,6 +70,11 @@ This talk discusses the versatility of symbolic tools, why one might want to dev
 						<img class="noframe" src="img/Apertium_logo_lightbg.svg" style="padding: 3px; background: none; border: none; height: 5em;"/>
 					</div>
 					</h4>
+				</section>
+
+				<section data-state="no-toc-progress">
+					<p><span style="font-size: 140%" class="highlight-red">Yukwe ènta kishkwik Lënapehòkink kpëmëtunhalelhumo.  Kenahkituneyo Lënapeyòk yu hàki òk Lënapei Sipu lòmëwe nòchi, yukwe, òk apchich.  Wëlilìsitàm tìlìch këmaxinkwelëmanëneyo Lënapeyunkahke, òk Lënapeyòk ahpihtit yukwe òk alàpa.</span></p>
+					<p>(I am speaking to you today from Lenapehoking, land of the Lenape.  We recognise the Lenape as past, present, and future stewards of this land and the Delaware River.  Let us honor through our actions the Lenape who were, those who are, and those who will be.)</p>
 				</section>
 
 				<section>
@@ -133,146 +130,34 @@ General outline:
 
 
 --->
-
-
 				<section>
-					<h2>Language vitality</h2>
-					<div class="highlight-box">
-						<h4>What do we mean by "loss of vitality" (wrt languages)</h4>
-						<p class="fragment">The "breakdown" of intergenerational transmission of a language</p>
-					</div>
-
+					<h2>What NLP do we work on?</h2>
 					<div class="float-left">
 						<div class="highlight-box fragment">
-							<h4>Why do languages lose vitality?</h4>
-							<p>DISINCENTIVES<p>
+							<h4>Common NLP tasks</h4>
 							<ul>
-								<li>oppressive actions/policies <span class="shrink">(forced displacement, genocide, educational policy, etc.)</span></li>
-								<li>is <span class="highlight">always</span> due to <span class="highlight">oppression</span> and <span class="highlight">marginalisation</span></li>
-								<li>At the core: if there are <span class="highlight">disincentives</span> to using a language, people will stop using it</li>
+								<li>Tokenisation</li>
+								<li>POS Tagging</li>
+								<li>Sentiment analysis</li>
+								<li>Stance detection</li>
+								<li>Inference / textual entailment</li>
+								<li>Semantic role labelling</li>
+								<li>Named entity recognition</li>
+								<li>Speech recognition</li>
+								<li>...</li>
 							</ul>
 						</div>
 					</div>
 					<div class="float-right">
 						<div class="highlight-box fragment">
-							<h4>Why should we care?</h4>
-							<li>For individuals:</li>
-							<ul class="shrink">
-								<li>Weakened connection to cultural knowledge</li>
-								<li>Loss of cognitive, academic, emotional benefits of multilingualism &amp; Indigenous language use </li>
-								<li>Impact on families</li>
-								<li>Impact on identity <br/>
-								<div class="citation" style="float: right">(Baumgart &amp; Billick 2017, Whalen et al. 2022, etc.)</div></li>
-							</ul>
-							<li>For community, wider world:</li>
-							<ul class="shrink">
-								<li>Loss of environmental, medical, historical knowledge</li>
-								<li>Loss of a whole way of understanding the world</li>
-								<li>Loss of a linguistic (cognitive &amp; social) system</li>
-								<li>Loss of diversity (cf. cultural, racial, etc.)</li>
-							</ul>
-
+							<h4>How we experience them</h4>
+							<img src="./img/apertium-kir.gif"/>
 						</div>
 					</div>
 				</section>
 
 				<section>
-					<h2>Language vitality</h2>
-
-					<div class="float-left">
-						<div class="highlight-box fragment">
-							<h4>languages <span class="highlight">currently spoken</span></span></h4>
-							<div class="fragment"><p>7159 <span class="citation">(Ethnologue 2025)</span></p>
-							<p>7134 <span class="citation">(UNESCO 2025)</span></p></div>
-						</div>
-					</div>
-					<div class="float-right">
-						<div class="highlight-box fragment">
-							<h4>percentage considered <span class="highlight">"endangered"</span></h4>
-							<div class="fragment"><p>44.6% <span class="citation">(Ethnologue 2025)</span></p>
-							<p>82.8% <span class="citation">(UNESCO 2025)</span></p><!-- 5906/7134 are not "safe" or "potentially vulnerable"; excludes "not in use" -->
-							</div>
-						</div>
-					</div>
-
-					<div class="float-right">
-						<div class="highlight-box fragment">
-							<h4>percentage considered <span class="highlight">"endangered"</span> in 2010</h4>
-							<p class="fragment">37% <span class="citation">(UNESCO 2010)</span></p>
-						</div>
-					</div>
-
-					<div class="float-left">
-						<div class="highlight-box fragment">
-							<h4>percentage considered <span class="highlight">"digitally vital"</span></h4>
-							<p class="fragment">5% <span class="citation">(Kornai 2013)</span></p>
-							<p class="fragment">(95% of languages will "die off" without better digital support)</p>
-						</div>
-					</div>
-
-					<!-- div class="highlight-box">
-						<h4>The language vitality crisis</h4>
-						<p>Languages everywhere are losing vitality</p>
-						<ul>
-							<li>Number of languages <span class="highlight">currently spoken</span>: <span class="raln"><span class="highlight-green">7159</span> <span class="citation">(Ethnologue 2025)</span></span></li>
-							<li>Percentage of those considered "<span class="highlight">endangered</span>":  <span class="raln"><span class="highlight-green">44.6%</span> <span class="citation">(Ethnologue 2025)</span></li>
-							<li>Percentage of those considered "<span class="highlight">digitally vital</span>": <span class="raln"><span class="highlight-green">5%</span> <span class="citation">(Kornai 2013)</span></span></li>
-							<ul>
-								<li>implication: <span class="highlight">95% of languages will "die off"</span></li>
-								<li>solution: need language technology</li>
-							</ul>
-						</ul>
-					</div -->
-					<!-- div class="fragment">
-						<p>Implications</p>
-						<ul>
-							<li>Languages everywhere are losing vitality</li>
-							<li>95% of languages will "die off" without better digital support</li>
-						</ul>
-						<p>Solutions</p>
-						<ul>
-							<li>Language technology</li>
-						</ul>
-					</div -->
-				</section>
-<!--
-unused
-{
-  "options": {"plugins":{
-	"legend": {"position": "right",
-		"labels": {"font": {"size": "200%"}, "fontColor": '#000'}
-	}
-  }},
- "data": {
-  "labels": ["Turkish", "Uzbek", "Azərbaycani", "Uyghur", "Kazakh", "Turkmen", "Tatar", "Kyrgyz", "Iraqi Türkman", "Bashqort", "Chuvash", "Qashqayi", "Khorasani", "Remainder"],
-  "datasets":[
-   {
-	 "data":[35.88,19.02,12.97,10.81,8.21,3.03,2.38,2.16,1.95,0.65,0.52,0.43,0.43,1.57],
-    "label":"Share of Turkic speakers by percent","backgroundColor":"rgba(20,220,220,.8)",
-    "borderColor": "rgba(255,255,255,1)",
-	 "backgroundColor": ["rgba(220,20,20,.8)",
-	 	"rgba(20,220,20,.8)",
-		"rgba(20,20,220,.8)",
-		"rgba(43,153,252,.8)",
-		"rgba(0,220,220,.8)",
-		"rgba(0,132,61,.8)",
-		"rgba(255,0,0,.8)",
-		"rgba(255,255,20,.8)",
-		"rgba(0,220,255,.8)",
-		"rgba(0,112,255,.8)",
-		"rgba(255,223,0,.8)",
-		"rgba(227,172,59,.8)",
-		"rgba(162,38,11,.8)",
-		"rgba(255,255,255,.8)"
-	  ]
-   }
-  ]
- }
-}
--->
-
-				<section>
-					<h2 style="width: 120%; margin: auto auto auto -10%">How is language technology experienced?</h2>
+					<h2 style="width: 120%; margin: auto auto auto -10%">How real people experience NLP</h2>
 					<!-- div class="highlight-box">
 						<p>anything linguistic that involves interacting with [digital] technology</p>
 						<hr/-->
@@ -344,9 +229,155 @@ unused
 	
 				</section>
 
+				<section>
+					<h2>Reframing NLP</h2>
+					<ul>
+						<li>NLP → Language technology</li>
+					</ul>
+				</section>
+
+				<!-- section>
+					<h2>Language vitality</h2>
+					<div class="highlight-box">
+						<h4>What do we mean by "loss of vitality" (wrt languages)</h4>
+						<p class="fragment">The "breakdown" of intergenerational transmission of a language</p>
+					</div>
+
+					<div class="float-left">
+						<div class="highlight-box fragment">
+							<h4>Why do languages lose vitality?</h4>
+							<p>DISINCENTIVES<p>
+							<ul>
+								<li>oppressive actions/policies <span class="shrink">(forced displacement, genocide, educational policy, etc.)</span></li>
+								<li>is <span class="highlight">always</span> due to <span class="highlight">oppression</span> and <span class="highlight">marginalisation</span></li>
+								<li>At the core: if there are <span class="highlight">disincentives</span> to using a language, people will stop using it</li>
+							</ul>
+						</div>
+					</div>
+					<div class="float-right">
+						<div class="highlight-box fragment">
+							<h4>Why should we care?</h4>
+							<li>For individuals:</li>
+							<ul class="shrink">
+								<li>Weakened connection to cultural knowledge</li>
+								<li>Loss of cognitive, academic, emotional benefits of multilingualism &amp; Indigenous language use </li>
+								<li>Impact on families</li>
+								<li>Impact on identity <br/>
+								<div class="citation" style="float: right">(Baumgart &amp; Billick 2017, Whalen et al. 2022, etc.)</div></li>
+							</ul>
+							<li>For community, wider world:</li>
+							<ul class="shrink">
+								<li>Loss of environmental, medical, historical knowledge</li>
+								<li>Loss of a whole way of understanding the world</li>
+								<li>Loss of a linguistic (cognitive &amp; social) system</li>
+								<li>Loss of diversity (cf. cultural, racial, etc.)</li>
+							</ul>
+
+						</div>
+					</div>
+				</section>
 
 				<section>
-					<h2>Language technology<br/>&amp; language vitality</h2>
+					<h2>Language vitality</h2>
+
+					<div class="float-left">
+						<div class="highlight-box fragment">
+							<h4>languages <span class="highlight">currently spoken</span></span></h4>
+							<div class="fragment"><p>7159 <span class="citation">(Ethnologue 2025)</span></p>
+							<p>7134 <span class="citation">(UNESCO 2025)</span></p></div>
+						</div>
+					</div>
+					<div class="float-right">
+						<div class="highlight-box fragment">
+							<h4>percentage considered <span class="highlight">"endangered"</span></h4>
+							<div class="fragment"><p>44.6% <span class="citation">(Ethnologue 2025)</span></p>
+							<p>82.8% <span class="citation">(UNESCO 2025)</span></p --><!-- 5906/7134 are not "safe" or "potentially vulnerable"; excludes "not in use" -->
+							<!-- /div>
+						</div>
+					</div>
+
+					<div class="float-right">
+						<div class="highlight-box fragment">
+							<h4>percentage considered <span class="highlight">"endangered"</span> in 2010</h4>
+							<p class="fragment">37% <span class="citation">(UNESCO 2010)</span></p>
+						</div>
+					</div>
+
+					<div class="float-left">
+						<div class="highlight-box fragment">
+							<h4>percentage considered <span class="highlight">"digitally vital"</span></h4>
+							<p class="fragment">5% <span class="citation">(Kornai 2013)</span></p>
+							<p class="fragment">(95% of languages will "die off" without better digital support)</p>
+						</div>
+					</div -->
+
+					<!-- div class="highlight-box">
+						<h4>The language vitality crisis</h4>
+						<p>Languages everywhere are losing vitality</p>
+						<ul>
+							<li>Number of languages <span class="highlight">currently spoken</span>: <span class="raln"><span class="highlight-green">7159</span> <span class="citation">(Ethnologue 2025)</span></span></li>
+							<li>Percentage of those considered "<span class="highlight">endangered</span>":  <span class="raln"><span class="highlight-green">44.6%</span> <span class="citation">(Ethnologue 2025)</span></li>
+							<li>Percentage of those considered "<span class="highlight">digitally vital</span>": <span class="raln"><span class="highlight-green">5%</span> <span class="citation">(Kornai 2013)</span></span></li>
+							<ul>
+								<li>implication: <span class="highlight">95% of languages will "die off"</span></li>
+								<li>solution: need language technology</li>
+							</ul>
+						</ul>
+					</div -->
+					<!-- div class="fragment">
+						<p>Implications</p>
+						<ul>
+							<li>Languages everywhere are losing vitality</li>
+							<li>95% of languages will "die off" without better digital support</li>
+						</ul>
+						<p>Solutions</p>
+						<ul>
+							<li>Language technology</li>
+						</ul>
+					</div -->
+				<!-- /section -->
+<!--
+unused
+{
+  "options": {"plugins":{
+	"legend": {"position": "right",
+		"labels": {"font": {"size": "200%"}, "fontColor": '#000'}
+	}
+  }},
+ "data": {
+  "labels": ["Turkish", "Uzbek", "Azərbaycani", "Uyghur", "Kazakh", "Turkmen", "Tatar", "Kyrgyz", "Iraqi Türkman", "Bashqort", "Chuvash", "Qashqayi", "Khorasani", "Remainder"],
+  "datasets":[
+   {
+	 "data":[35.88,19.02,12.97,10.81,8.21,3.03,2.38,2.16,1.95,0.65,0.52,0.43,0.43,1.57],
+    "label":"Share of Turkic speakers by percent","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(220,20,20,.8)",
+	 	"rgba(20,220,20,.8)",
+		"rgba(20,20,220,.8)",
+		"rgba(43,153,252,.8)",
+		"rgba(0,220,220,.8)",
+		"rgba(0,132,61,.8)",
+		"rgba(255,0,0,.8)",
+		"rgba(255,255,20,.8)",
+		"rgba(0,220,255,.8)",
+		"rgba(0,112,255,.8)",
+		"rgba(255,223,0,.8)",
+		"rgba(227,172,59,.8)",
+		"rgba(162,38,11,.8)",
+		"rgba(255,255,255,.8)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+
+				<!-- section>
+					<h2 style="width: 120%; margin: auto auto auto -10%">How is language technology experienced?</h2 -->
+
+				<section>
+					<!-- h2>Language technology<br/>&amp; language vitality</h2 -->
+					<h2>Why language technology matters</h2>
 
 					<div class="highlight-box">
 						<h4>Why is language technology important to language vitality?</h4>
